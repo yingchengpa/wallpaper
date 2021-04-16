@@ -1,0 +1,4817 @@
+{
+	"app": {
+		"uid": "natgeo",
+		"mode": "universal",
+		"apiEnv": "production",
+		"envName": "prod",
+		"cdnPath": "//assets-cdn.nationalgeographic.com/natgeo/7a19fd44bb73-release-04-14-2021.2/client",
+		"collateXhr": {},
+		"webpack": {},
+		"nochunks": false,
+		"allowMocks": true,
+		"mockDataPort": 1981,
+		"inclPgCSS": true,
+		"assets": {
+			"scripts": [
+				"//assets-cdn.nationalgeographic.com/natgeo/7a19fd44bb73-release-04-14-2021.2/client/natgeo.js",
+				"//assets-cdn.nationalgeographic.com/natgeo/7a19fd44bb73-release-04-14-2021.2/client/natgeo-en-us.js",
+				"//assets-cdn.nationalgeographic.com/natgeo/7a19fd44bb73-release-04-14-2021.2/client/mediaspotlight.js"
+			],
+			"stylesheets": [
+				"//assets-cdn.nationalgeographic.com/natgeo/7a19fd44bb73-release-04-14-2021.2/client/css/natgeo.css",
+				"//assets-cdn.nationalgeographic.com/natgeo/7a19fd44bb73-release-04-14-2021.2/client/css/mediaspotlight.css"
+			]
+		},
+		"device": "desktop",
+		"edition": {
+			"key": "natgeo-en-us",
+			"config": {},
+			"translations": {}
+		},
+		"flags": {
+			"ftr": true,
+			"hdr": true,
+			"prxy": false
+		},
+		"tms": {
+			"enabled": true,
+			"env": "dev",
+			"tag": "https://dcf.espn.com/TWDC-DTCI/prod/Bootstrap.js",
+			"tagNS": "Boostrapper",
+			"emitEvent": "tms:ready",
+			"frameTag": "https://dcf.espn.com/TWDC-DTCI/embed_privacy_prod/Bootstrap.js"
+		},
+		"featureGating": {
+			"ensighten": {
+				"enabled": true,
+				"ns": "Boostrapper",
+				"scriptTag": "https://dcf.espn.com/TWDC-DTCI/prod/Bootstrap.js",
+				"frameTag": "https://dcf.espn.com/TWDC-DTCI/embed_privacy_prod/Bootstrap.js"
+			},
+			"adConfig": {
+				"enabled": true,
+				"insertedAdLimit": null,
+				"insertedAdSpacing": 900,
+				"pzn": {
+					"mode": "ltd",
+					"extra": true
+				},
+				"refreshInterval": 30
+			},
+			"contentExclusions": {
+				"disable": false
+			},
+			"intrctvSlctrs": {
+				"fullPage": {
+					"key": "fullPage",
+					"value": "div:not(#natgeo)"
+				},
+				"markup": [
+					{
+						"key": "class=\"leaflet-container ",
+						"value": "div#map"
+					}
+				],
+				"spredfast": {
+					"key": "spredfast",
+					"value": "iframe"
+				}
+			},
+			"intrctvWhtlst": {
+				"facebook": {
+					"src": [
+						"//connect.facebook.net/en_US/sdk.js",
+						"//facebook.com/plugins/",
+						"//facebook.com/video/embed?video_id=",
+						"//interactives.natgeofe.com/",
+						"//www.facebook.com/plugins/",
+						"//www.facebook.com/video/embed?video_id="
+					]
+				},
+				"fullPage": {
+					"src": [
+						"//interactives.natgeofe.com/"
+					]
+				},
+				"game": {
+					"src": [
+						"//images.nationalgeographic.com/",
+						"//interactives.natgeofe.com/",
+						"//nationalgeographic.com/",
+						"//www.nationalgeographic.com/"
+					]
+				},
+				"iHeartRadio": {
+					"src": [
+						"//iheart.com/podcast/",
+						"//interactives.natgeofe.com/",
+						"//www.iheart.com/podcast/"
+					]
+				},
+				"instagram": {
+					"src": [
+						"//instagram.com/p/",
+						"//instagram.com/embed.js",
+						"//interactives.natgeofe.com/",
+						"//platform.instagram.com/en_US/embeds.js",
+						"//www.instagram.com/embed.js"
+					]
+				},
+				"markup": {
+					"href": [
+						"//api.tiles.mapbox.com/mapbox-gl-js/",
+						"//fonts.googleapis.com/css?family=",
+						"//fonts.ngeo.com/",
+						"//interactives.natgeofe.com/",
+						"//nationalgeographic.com/",
+						"//ngm.nationalgeographic.com/",
+						"//s3.amazonaws.com/ng-plastic-prod",
+						"//www.nationalgeographic.com/"
+					],
+					"src": [
+						"//ajax.googleapis.com/ajax/libs/jquery/",
+						"//api.tiles.mapbox.com/mapbox-gl-js/",
+						"//assets.documentcloud.org/viewer/loader.js",
+						"//d3js.org/d3",
+						"//fonts.ngeo.com/",
+						"//images.nationalgeographic.com/",
+						"//interactives.natgeofe.com/",
+						"//nationalgeographic.com/",
+						"//news.nationalgeographic.com/",
+						"//ngm.nationalgeographic.com/",
+						"//platform.vine.co/static/scripts/embed.js",
+						"//s3.amazonaws.com/ng-plastic-prod",
+						"//www.nationalgeographic.com/"
+					]
+				},
+				"soundCloud": {
+					"src": [
+						"//interactives.natgeofe.com/",
+						"//soundcloud.com/",
+						"//w.soundcloud.com/"
+					]
+				},
+				"source": {
+					"src": [
+						"//interactives.natgeofe.com/"
+					]
+				},
+				"spredfast": {
+					"href": [
+						"//interactives.natgeofe.com/"
+					],
+					"src": [
+						"//interactives.natgeofe.com/"
+					]
+				},
+				"twitter": {
+					"src": [
+						"//interactives.natgeofe.com/",
+						"//platform.twitter.com/",
+						"//twitter.com/",
+						"//www.twitter.com/"
+					]
+				},
+				"vimeo": {
+					"src": [
+						"//interactives.natgeofe.com/",
+						"//player.vimeo.com/",
+						"//vimeo.com/moogaloop.swf?clip_id=",
+						"//www.vimeo.com/moogaloop.swf?clip_id="
+					]
+				}
+			}
+		},
+		"debug": {
+			"on": false
+		},
+		"baseURL": "https://www.nationalgeographic.com"
+	},
+	"ads": {},
+	"analytics": {},
+	"routing": {
+		"location": {
+			"pathname": "/photo-of-the-day",
+			"port": "",
+			"hash": "",
+			"path": "/photo-of-the-day",
+			"host": "",
+			"protocol": "",
+			"params": "",
+			"query": {}
+		},
+		"params": {
+			"pageType": "mediaspotlight",
+			"section": "photo-of-the-day"
+		}
+	},
+	"page": {
+		"key": "",
+		"title": "",
+		"type": "mediaspotlight",
+		"meta": {
+			"canonical": "https://www.nationalgeographic.com/photo-of-the-day/media-spotlight/women-niqab-saudi-arabia",
+			"description": "A woman wearing a niqab watches over girls playing on a beach in Saudi Arabia in this image from our photography archives.",
+			"hrefLangs": [
+				{
+					"lcl": "en-us",
+					"url": "https://www.nationalgeographic.com/photo-of-the-day"
+				}
+			],
+			"ogMetadata": {
+				"type": "article",
+				"sclDsc": "A woman wearing a niqab watches over girls playing on a beach in Saudi Arabia in this image from our photography archives.",
+				"sclTtl": "Saudi Women | Nat Geo Photo of the Day",
+				"sctn": {},
+				"twtHndl": "@NatGeo",
+				"title": "Saudi Women | Nat Geo Photo of the Day",
+				"description": "A woman wearing a niqab watches over girls playing on a beach in Saudi Arabia in this image from our photography archives.",
+				"sclImg": "https://i.natgeofe.com/n/0fb5fa13-d1bc-45e3-80b0-6efa9de07199/POD-15-04-2021_NationalGeographic_436858.jpg"
+			},
+			"title": "Saudi Women | Nat Geo Photo of the Day",
+			"section": "photo-of-the-day",
+			"subSection": "",
+			"pageName": "natgeo:photo-of-the-day:mediaspotlight",
+			"id": "drn:src:natgeo:unison::prod:fd5444cc-4777-4438-b9d4-5085c0564b44"
+		},
+		"content": {
+			"footer": {
+				"frms": [
+					{
+						"id": "natgeo-marketing-inline-email-footer-frame1",
+						"mods": [
+							{
+								"id": "natgeo-marketing-inline-email-footer-frame1-module2",
+								"cmsType": "StackModule",
+								"align": "left",
+								"edgs": [
+									{
+										"id": "natgeo-marketing-inline-email-footer-frame1-module2-tile1",
+										"cmsType": "EmailInlineTile",
+										"title": "The best of National Geographic delivered to your inbox",
+										"backgroundImage": "https://i.natgeofe.com/n/2e2421a3-f3cb-485f-b482-753cce8baaa0/MossForest.adapt.885.1.jpg",
+										"errorMessage": "Please enter a valid e-mail address.",
+										"mrktngMeta": {
+											"cpgnCd": "20210217_global_inline_email_signup_footer"
+										},
+										"placeholder": "Enter your email",
+										"subtitle": "Sign up for more inspiring photos, stories, and special offers from National Geographic.",
+										"success": {
+											"description": "<p>Watch your inbox over the next few days for photos, stories, and special offers from us.<p>",
+											"header": "Thanks for signing up!"
+										},
+										"submitButton": "Sign Up"
+									}
+								]
+							}
+						],
+						"placement": "footer",
+						"chldOptns": {
+							"bannerPlacement": "footer"
+						}
+					},
+					{
+						"placement": "footer",
+						"logoObj": {
+							"key": "logoObj",
+							"alt": "National Geographic Logo - Home",
+							"href": "/",
+							"title": null,
+							"logo": {
+								"image": {
+									"crps": [
+										{
+											"nm": "raw",
+											"aspRto": 3.4364261168384879
+										}
+									],
+									"rt": "https://i.natgeofe.com/n/4da26b5c-18ee-413f-96dd-4cf3fb4a68a0/2fl-white",
+									"src": "https://i.natgeofe.com/n/4da26b5c-18ee-413f-96dd-4cf3fb4a68a0/2fl-white.png",
+									"ext": "png"
+								}
+							},
+							"mobileLogo": {
+								"image": {
+									"crps": [
+										{
+											"nm": "raw",
+											"aspRto": 3.4364261168384879
+										}
+									],
+									"rt": "https://i.natgeofe.com/n/4da26b5c-18ee-413f-96dd-4cf3fb4a68a0/2fl-white",
+									"src": "https://i.natgeofe.com/n/4da26b5c-18ee-413f-96dd-4cf3fb4a68a0/2fl-white.png",
+									"ext": "png"
+								}
+							}
+						},
+						"id": "natgeo-footer",
+						"cmsType": "FooterFrame",
+						"mods": [
+							{
+								"mnu": [
+									{
+										"title": "Legal",
+										"links": [
+											{
+												"url": "https://disneytermsofuse.com/english/",
+												"isExternal": null,
+												"title": "Terms of Use"
+											},
+											{
+												"url": "https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/",
+												"isExternal": null,
+												"title": "Privacy Policy"
+											},
+											{
+												"url": "https://disneyprivacycenter.com/notice-to-california-residents/",
+												"isExternal": null,
+												"title": "Your California Privacy Rights"
+											},
+											{
+												"url": "https://disneyprivacycenter.com/kids-privacy-policy/english/",
+												"isExternal": null,
+												"title": "Children's Online Privacy Policy"
+											},
+											{
+												"url": "http://preferences-mgr.trustarc.com/?pid=disney01&aid=natgeo01&type=natgeo",
+												"isExternal": null,
+												"title": "Interest-Based Ads"
+											},
+											{
+												"url": "http://www.nielsen.com/digitalprivacy",
+												"isExternal": null,
+												"title": "About Nielsen Measurement"
+											},
+											{
+												"url": "https://privacy.thewaltdisneycompany.com/en/dnsmi/",
+												"isExternal": null,
+												"title": "Do Not Sell My Info",
+												"style": "ot-sdk-show-settings"
+											}
+										]
+									},
+									{
+										"title": "Our Sites",
+										"links": [
+											{
+												"url": "/",
+												"isExternal": null,
+												"title": "Nat Geo Home"
+											},
+											{
+												"url": "https://www.nationalgeographic.com/events/",
+												"isExternal": null,
+												"title": "Attend a Live Event"
+											},
+											{
+												"url": "https://www.nationalgeographic.com/expeditions/?cmpid=int_org=ngp::int_mc=website::int_src=ngp::int_cmp=exp_hp::int_add=ngpexp201904-book-footer",
+												"isExternal": null,
+												"title": "Book a Trip"
+											},
+											{
+												"url": "http://www.natgeomaps.com",
+												"isExternal": null,
+												"title": "Buy Maps"
+											},
+											{
+												"url": "https://kids.nationalgeographic.com",
+												"isExternal": null,
+												"title": "Inspire Your Kids"
+											},
+											{
+												"url": "https://www.shopdisney.com/franchises/national-geographic/",
+												"isExternal": null,
+												"title": "Shop Nat Geo"
+											},
+											{
+												"url": "https://www.nationalgeographic.org/tickets/events/",
+												"isExternal": null,
+												"title": "Visit the D.C. Museum"
+											},
+											{
+												"url": "https://www.nationalgeographic.com/tv/",
+												"isExternal": null,
+												"title": "Watch TV"
+											},
+											{
+												"url": "/impact",
+												"isExternal": null,
+												"title": "Learn About Our Impact"
+											},
+											{
+												"url": "https://www.nationalgeographic.org/give/",
+												"isExternal": null,
+												"title": "Support our Mission"
+											},
+											{
+												"url": "https://nationalgeographicpartners.com/",
+												"isExternal": null,
+												"title": "Nat Geo Partners"
+											},
+											{
+												"url": "https://www.nationalgeographic.com/masthead/",
+												"isExternal": null,
+												"title": "Masthead"
+											},
+											{
+												"url": "https://nationalgeographicpartners.com/press/",
+												"isExternal": null,
+												"title": "Press Room"
+											},
+											{
+												"url": "https://disneyadsales.com/our-brands/national-geographic/",
+												"isExternal": null,
+												"title": "Advertise With Us"
+											}
+										]
+									},
+									{
+										"title": "Join Us",
+										"links": [
+											{
+												"url": "/subscribe",
+												"isExternal": false,
+												"title": "Subscribe"
+											},
+											{
+												"url": "https://help.nationalgeographic.com/s/",
+												"isExternal": false,
+												"title": "Customer Service"
+											},
+											{
+												"url": "/renew",
+												"isExternal": false,
+												"title": "Renew Subscription"
+											},
+											{
+												"url": "https://ngmservice.com",
+												"isExternal": false,
+												"title": "Manage Your Subscription"
+											},
+											{
+												"url": "https://www.nationalgeographicpartners.com/careers/",
+												"isExternal": false,
+												"title": "Work at Nat Geo"
+											},
+											{
+												"url": "/newsletters/signup?gblftr",
+												"isExternal": true,
+												"title": "Sign up for Our Newsletters",
+												"target": "_blank"
+											},
+											{
+												"url": "https://give.nationalgeographic.org/page/53299/donate/1?user_id=wb8em7wclp2gec8f8rj9f6lp88q9dftd",
+												"isExternal": true,
+												"title": "Contribute to Protect the Planet",
+												"target": "_blank"
+											},
+											{
+												"url": "/pages/article/how-to-write-for-nat-geo",
+												"isExternal": true,
+												"title": "Pitch a Story",
+												"target": "_blank"
+											}
+										]
+									}
+								]
+							},
+							{
+								"edtnSltr": {
+									"rgns": [
+										{
+											"title": "Europe",
+											"countries": [
+												{
+													"title": "Bulgaria",
+													"flag": {
+														"icon": "flag__bulgaria",
+														"alt": "bu"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/bg",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														},
+														{
+															"url": "https://www.nationalgeographic.bg/",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Croatia",
+													"flag": {
+														"icon": "flag__croatia",
+														"alt": "cr"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/hr",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														},
+														{
+															"url": "http://www.adriamedia.hr/izdanja/national-geographic-hrvatska",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Czech Republic",
+													"flag": {
+														"icon": "flag__czech-republic",
+														"alt": "cz"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/cz",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														},
+														{
+															"url": "https://www.national-geographic.cz",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Denmark",
+													"flag": {
+														"icon": "flag__denmark",
+														"alt": "de"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/dk",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Estonia",
+													"flag": {
+														"icon": "flag__estonia",
+														"alt": "es"
+													},
+													"links": [
+														{
+															"url": "http://www.nationalgeographic.ee",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Finland",
+													"flag": {
+														"icon": "flag__finland",
+														"alt": "fi"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/fi",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "France",
+													"flag": {
+														"icon": "flag__france",
+														"alt": "fr"
+													},
+													"links": "https://www.nationalgeographic.fr"
+												},
+												{
+													"title": "Georgia",
+													"flag": {
+														"icon": "flag__georgia",
+														"alt": "ge"
+													},
+													"links": [
+														{
+															"url": "http://www.nationalgeographic.ge",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Germany",
+													"flag": {
+														"icon": "flag__germany",
+														"alt": "ge"
+													},
+													"links": "https://www.nationalgeographic.de"
+												},
+												{
+													"title": "Greece",
+													"flag": {
+														"icon": "flag__greece",
+														"alt": "gr"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/gr",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Hungary",
+													"flag": {
+														"icon": "flag__hungary",
+														"alt": "hu"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/hu",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														},
+														{
+															"url": "http://www.ng.hu",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Israel",
+													"flag": {
+														"icon": "flag__israel",
+														"alt": "is"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/il",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Italy",
+													"flag": {
+														"icon": "flag__italy",
+														"alt": "it"
+													},
+													"links": "http://www.nationalgeographic.it"
+												},
+												{
+													"title": "Kazakhstan",
+													"flag": {
+														"icon": "flag__kazakhstan",
+														"alt": "ka"
+													},
+													"links": [
+														{
+															"url": "https://www.nationalgeographic.kz",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Lithuania",
+													"flag": {
+														"icon": "flag__lithuania",
+														"alt": "li"
+													},
+													"links": [
+														{
+															"url": "https://www.nationalgeographic.lt",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Netherlands",
+													"flag": {
+														"icon": "flag__netherlands",
+														"alt": "ne"
+													},
+													"links": "https://www.nationalgeographic.nl"
+												},
+												{
+													"title": "Norway",
+													"flag": {
+														"icon": "flag__norway",
+														"alt": "no"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/no",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Poland",
+													"flag": {
+														"icon": "flag__poland",
+														"alt": "po"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/pl",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														},
+														{
+															"url": "http://www.national-geographic.pl",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Portugal",
+													"flag": {
+														"icon": "flag__portugal",
+														"alt": "po"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/pt",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														},
+														{
+															"url": "https://nationalgeographic.sapo.pt",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Romania",
+													"flag": {
+														"icon": "flag__romania",
+														"alt": "ro"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/ro",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														},
+														{
+															"url": "https://www.natgeo.ro/",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Russia",
+													"flag": {
+														"icon": "flag__russia",
+														"alt": "ru"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/ru",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														},
+														{
+															"url": "http://www.nat-geo.ru/",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Serbia",
+													"flag": {
+														"icon": "flag__serbia",
+														"alt": "se"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/rs",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														},
+														{
+															"url": "http://www.nationalgeographic.rs/",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Slovenia",
+													"flag": {
+														"icon": "flag__slovenia",
+														"alt": "sl"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/si",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														},
+														{
+															"url": "http://www.nationalgeographic.si/",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Spain",
+													"flag": {
+														"icon": "flag__spain",
+														"alt": "sp"
+													},
+													"links": [
+														{
+															"url": "https://www.nationalgeographic.es/",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														},
+														{
+															"url": "https://www.nationalgeographic.com.es/",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Sweden",
+													"flag": {
+														"icon": "flag__sweden",
+														"alt": "sw"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/se",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Turkey",
+													"flag": {
+														"icon": "flag__turkey",
+														"alt": "tu"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/tr",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														},
+														{
+															"url": "http://www.nationalgeographic.com.tr/",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "United Kingdom",
+													"flag": {
+														"icon": "flag__united-kingdom",
+														"alt": "uk"
+													},
+													"links": "https://www.nationalgeographic.co.uk/"
+												}
+											]
+										},
+										{
+											"title": "The Americas",
+											"countries": [
+												{
+													"title": "Brazil",
+													"flag": {
+														"icon": "flag__brazil",
+														"alt": "br"
+													},
+													"links": [
+														{
+															"url": "https://www.nationalgeographicbrasil.com/",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Canada",
+													"flag": {
+														"icon": "flag__canada",
+														"alt": "ca"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/ca",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Mexico",
+													"flag": {
+														"icon": null,
+														"alt": "mx"
+													},
+													"links": [
+														{
+															"url": "https://www.ngenespanol.com/",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Pan-Regional Latin America (Spanish)",
+													"flag": {
+														"icon": null,
+														"alt": "pa"
+													},
+													"links": "https://www.nationalgeographicla.com/"
+												},
+												{
+													"title": "United States",
+													"flag": {
+														"icon": "flag__united-states",
+														"alt": "us"
+													},
+													"links": "/"
+												}
+											]
+										},
+										{
+											"title": "Asia, Australia & Oceania",
+											"countries": [
+												{
+													"title": "Australia",
+													"flag": {
+														"icon": "flag__australia",
+														"alt": "au"
+													},
+													"links": [
+														{
+															"url": "https://www.nationalgeographic.com.au",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Mainland China",
+													"flag": {
+														"icon": null,
+														"alt": "ch"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeo.com.cn/",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														},
+														{
+															"url": "http://www.ngchina.com.cn/",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Hong Kong",
+													"flag": {
+														"icon": null,
+														"alt": "ho"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/hk",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "India",
+													"flag": {
+														"icon": "flag__india",
+														"alt": "in"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/in",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														},
+														{
+															"url": "https://www.amarchitrakatha.com/in/magazines/national-geographic/",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Indonesia",
+													"flag": {
+														"icon": "flag__indonesia",
+														"alt": "in"
+													},
+													"links": [
+														{
+															"url": "https://nationalgeographic.grid.id/",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Japan",
+													"flag": {
+														"icon": "flag__japan",
+														"alt": "ja"
+													},
+													"links": [
+														{
+															"url": "http://www.ngcjapan.com/tv/",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														},
+														{
+															"url": "http://www.nationalgeographic.jp",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Korea",
+													"flag": {
+														"icon": "flag__south-korea",
+														"alt": "ko"
+													},
+													"links": [
+														{
+															"url": "http://www.ngckorea.com",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														},
+														{
+															"url": "https://www.nationalgeographic.co.kr/",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Pan-Regional Asia (English)",
+													"flag": {
+														"icon": null,
+														"alt": "pa"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/asia",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Taiwan",
+													"flag": {
+														"icon": null,
+														"alt": "ta"
+													},
+													"links": [
+														{
+															"url": "https://www.fng.tw/ngc/",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														},
+														{
+															"url": "https://www.natgeomedia.com/",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Thailand",
+													"flag": {
+														"icon": "flag__thailand",
+														"alt": "th"
+													},
+													"links": [
+														{
+															"url": "http://www.ngthai.com",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												}
+											]
+										},
+										{
+											"title": "Middle East & Africa",
+											"countries": [
+												{
+													"title": "Farsi",
+													"flag": {
+														"icon": null,
+														"alt": "fa"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/farsi",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Persian",
+													"flag": {
+														"icon": null,
+														"alt": "pe"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/persian",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "South Africa",
+													"flag": {
+														"icon": "flag__south-africa",
+														"alt": "so"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/za",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Middle East (English)",
+													"flag": {
+														"icon": null,
+														"alt": "mi"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/ae",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														}
+													]
+												},
+												{
+													"title": "Middle East (Arabic)",
+													"flag": {
+														"icon": null,
+														"alt": "mi"
+													},
+													"links": [
+														{
+															"url": "https://www.natgeotv.com/me",
+															"isExternal": false,
+															"title": "Channel",
+															"target": "_self"
+														},
+														{
+															"url": "http://www.ngalarabiya.com",
+															"isExternal": false,
+															"title": "Magazine",
+															"target": "_self"
+														}
+													]
+												}
+											]
+										}
+									],
+									"crnt": {
+										"title": "United States",
+										"flag": {
+											"icon": "flag__united-states",
+											"alt": "us"
+										},
+										"links": "/"
+									},
+									"key": "edtnSltr"
+								},
+								"shrURLs": {
+									"key": "shrURLs",
+									"fb": "https://www.facebook.com/natgeo",
+									"fbLabel": "natgeo.facebookShare.ariaLabel",
+									"fbButtonTracking": {
+										"event_name": "share",
+										"share_method": "facebook",
+										"content_title": ""
+									},
+									"twitter": "https://twitter.com/natgeo/",
+									"twitterLabel": "natgeo.twitterShare.ariaLabel",
+									"twitterButtonTracking": {
+										"event_name": "share",
+										"share_method": "twitter",
+										"content_title": ""
+									},
+									"instagram": "https://www.instagram.com/natgeo/",
+									"instagramLabel": "natgeo.instagramShare.ariaLabel",
+									"instagramButtonTracking": {
+										"event_name": "share",
+										"share_method": "instagram",
+										"content_title": ""
+									}
+								}
+							}
+						]
+					},
+					{
+						"placement": "footer",
+						"id": "frame10",
+						"mods": [
+							{
+								"logoObj": {
+									"key": "logoObj",
+									"alt": "National Geographic Logo - Home",
+									"href": "/",
+									"title": null,
+									"logo": {
+										"image": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 3.4364261168384879
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/4da26b5c-18ee-413f-96dd-4cf3fb4a68a0/2fl-white",
+											"src": "https://i.natgeofe.com/n/4da26b5c-18ee-413f-96dd-4cf3fb4a68a0/2fl-white.png",
+											"ext": "png"
+										}
+									},
+									"mobileLogo": {
+										"image": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 3.4364261168384879
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/4da26b5c-18ee-413f-96dd-4cf3fb4a68a0/2fl-white",
+											"src": "https://i.natgeofe.com/n/4da26b5c-18ee-413f-96dd-4cf3fb4a68a0/2fl-white.png",
+											"ext": "png"
+										}
+									}
+								},
+								"cprt": {
+									"key": "cprt",
+									"txt": [
+										"Copyright © 1996-2015 National Geographic Society",
+										"Copyright © 2015-2021 National Geographic Partners, LLC. All rights reserved"
+									]
+								}
+							}
+						],
+						"cmsType": "CopyrightFrame"
+					}
+				]
+			},
+			"header": {
+				"frms": [
+					{
+						"id": "natgeo-global-header-frame1",
+						"placement": "header",
+						"chldOptns": {
+							"bannerPlacement": "header"
+						}
+					},
+					{
+						"placement": "header",
+						"id": "natgeo-nav",
+						"mods": [
+							{
+								"logoObj": {
+									"key": "logoObj",
+									"alt": "National Geographic Logo - Home",
+									"href": "/",
+									"title": "National Geographic",
+									"logo": {
+										"image": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 3.404255319148936
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/e76f5368-6797-4794-b7f6-8d757c79ea5c/ng-logo-2fl",
+											"src": "https://i.natgeofe.com/n/e76f5368-6797-4794-b7f6-8d757c79ea5c/ng-logo-2fl.png",
+											"ext": "png"
+										}
+									},
+									"mobileLogo": {
+										"image": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 0.7
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/1852daf6-1c8d-4428-8ee2-d9a82bd0401c/ng-border",
+											"src": "https://i.natgeofe.com/n/1852daf6-1c8d-4428-8ee2-d9a82bd0401c/ng-border.png",
+											"ext": "png"
+										}
+									}
+								},
+								"usr": {
+									"key": "usr",
+									"links": [
+										{
+											"url": "#oneid-profile",
+											"title": "Account Settings"
+										},
+										{
+											"url": "/subscribe/link-subscription",
+											"title": "Link Your Subscription"
+										},
+										{
+											"url": "https://help.nationalgeographic.com/s/",
+											"title": "Help",
+											"target": "_blank"
+										},
+										{
+											"url": "#oneid-logout",
+											"title": "Sign Out"
+										}
+									],
+									"lnk": {
+										"url": "#oneid-login"
+									}
+								},
+								"srch": {
+									"title": null,
+									"icon": null,
+									"href": "/search",
+									"key": "srch",
+									"shw": true
+								},
+								"rnw": {
+									"key": "rnw",
+									"shw": true,
+									"title": "Renew",
+									"url": "/renew"
+								},
+								"sbcrb": {
+									"key": "sbcrb",
+									"shw": true,
+									"title": "Subscribe",
+									"url": "/subscribe"
+								},
+								"mnu": {
+									"undefined": {
+										"title": "",
+										"links": [
+											{
+												"url": "/subscribe",
+												"title": "Subscribe"
+											},
+											{
+												"url": "/renew",
+												"title": "Renew"
+											}
+										]
+									},
+									"prmMnu": {
+										"key": "prmMnu",
+										"title": "Topics",
+										"links": [
+											{
+												"url": "/animals",
+												"title": "Animals"
+											},
+											{
+												"url": "/environment",
+												"title": "Environment"
+											},
+											{
+												"url": "/history",
+												"title": "History & Culture"
+											},
+											{
+												"url": "/science",
+												"title": "Science"
+											},
+											{
+												"url": "/travel",
+												"title": "Travel"
+											}
+										]
+									},
+									"secMnu": {
+										"key": "secMnu",
+										"title": "Sites",
+										"links": [
+											{
+												"url": "https://www.nationalgeographic.com/tv/",
+												"title": "Watch TV!"
+											},
+											{
+												"url": "/magazine",
+												"title": "Read The Magazine"
+											},
+											{
+												"url": "/family",
+												"title": "Visit Nat Geo Family"
+											},
+											{
+												"url": "https://www.nationalgeographic.com/expeditions/",
+												"title": "Book A Trip"
+											},
+											{
+												"url": "https://kids.nationalgeographic.com",
+												"title": "Inspire your Kids"
+											},
+											{
+												"url": "/podcasts/overheard",
+												"title": "Listen to Podcasts"
+											},
+											{
+												"url": "https://www.shopdisney.com/franchises/national-geographic/",
+												"title": "Shop Nat Geo"
+											},
+											{
+												"url": "https://www.nationalgeographic.com/events/",
+												"title": "Attend a Live Event"
+											},
+											{
+												"url": "/impact",
+												"title": "Learn About Our Impact"
+											},
+											{
+												"url": "https://www.nationalgeographic.org/give/",
+												"title": "Support Our Mission"
+											}
+										]
+									},
+									"key": "mnu"
+								},
+								"cmsType": "NavModule"
+							}
+						],
+						"cmsType": "NavFrame"
+					},
+					{
+						"id": "e17aa8d2-d11b-4156-88f1-93b2a532cac9",
+						"className": "stickyFrame stickyFrame--bottom",
+						"placement": "header",
+						"chldOptns": {
+							"bannerPlacement": "footer"
+						}
+					}
+				]
+			},
+			"mediaspotlight": {
+				"frms": [
+					{
+						"id": "natgeo-web-template-infinite-gallery-frame",
+						"mods": [
+							{
+								"id": "natgeo-web-template-infinite-gallery-module",
+								"cmsType": "MediaSpotlightModule",
+								"edgs": [
+									{
+										"id": "natgeo-web-template-infinite-gallery-headline",
+										"cmsType": "HeadlineTile",
+										"align": "left",
+										"casing": "caps",
+										"hideLine": true,
+										"heading": "Photo of the Day"
+									},
+									{
+										"aspectRatio": "3x2",
+										"cmsType": "MediaSpotlightContentsTile",
+										"id": "drn:src:natgeo:unison::prod:7671ccb9-e964-4c97-99dd-576901e74ed0",
+										"media": [
+											{
+												"img": {
+													"crps": [
+														{
+															"nm": "raw",
+															"aspRto": 1.4442877291960508
+														},
+														{
+															"nm": "16x9",
+															"aspRto": 1.7777777777777777
+														},
+														{
+															"nm": "3x2",
+															"aspRto": 1.5
+														},
+														{
+															"nm": "square",
+															"aspRto": 1
+														},
+														{
+															"nm": "2x3",
+															"aspRto": 0.6666666666666666
+														},
+														{
+															"nm": "3x4",
+															"aspRto": 0.75
+														},
+														{
+															"nm": "4x3",
+															"aspRto": 1.3333333333333333
+														},
+														{
+															"nm": "2x1",
+															"aspRto": 2
+														}
+													],
+													"rt": "https://i.natgeofe.com/n/0fb5fa13-d1bc-45e3-80b0-6efa9de07199/POD-15-04-2021_NationalGeographic_436858",
+													"src": "https://i.natgeofe.com/n/0fb5fa13-d1bc-45e3-80b0-6efa9de07199/POD-15-04-2021_NationalGeographic_436858.jpg",
+													"altText": "Picture of a woman in Saudi Arabia wearing a veil while watching over girls playing on a beach.",
+													"crdt": "Photograph by Jodi Cobb, Nat Geo Image Collection",
+													"dsc": "A story in the October 1987 issue examined the lives of women in Saudi Arabia. Here, a woman wears a traditional niqab, but the young girls won't start wearing the veil until they reach puberty.",
+													"ext": "jpg",
+													"ttl": "Saudi Women"
+												},
+												"slug": "women-niqab-saudi-arabia",
+												"locator": "/photo-of-the-day/media-spotlight/women-niqab-saudi-arabia",
+												"cursor": "RFlOQV8wI0lEOkRSTnxkcm46c3JjOm5hdGdlbzp1bmlzb246OnByb2Q6MTdmZmU4NDEtYmM0Yy00MzgzLTg2MjktMWI4NDE5NmEzOGMxI1NPUlQ6b3JpZ2luYWxQdWJsaXNoZWREYXRlfDE2MTg0NDk4NzQ2MTU=",
+												"caption": {
+													"credit": "Photograph by Jodi Cobb, Nat Geo Image Collection",
+													"preHeading": "April 15, 2021",
+													"text": "A story in the October 1987 issue examined the lives of women in Saudi Arabia. Here, a woman wears a traditional niqab, but the young girls won't start wearing the veil until they reach puberty.",
+													"title": "Saudi Women"
+												},
+												"meta": {
+													"title": "Saudi Women | Nat Geo Photo of the Day",
+													"description": "A woman wearing a niqab watches over girls playing on a beach in Saudi Arabia in this image from our photography archives."
+												}
+											},
+											{
+												"img": {
+													"crps": [
+														{
+															"nm": "raw",
+															"aspRto": 1.5025678650036685
+														},
+														{
+															"nm": "16x9",
+															"aspRto": 1.7777777777777777
+														},
+														{
+															"nm": "3x2",
+															"aspRto": 1.5
+														},
+														{
+															"nm": "square",
+															"aspRto": 1
+														},
+														{
+															"nm": "2x3",
+															"aspRto": 0.6666666666666666
+														},
+														{
+															"nm": "3x4",
+															"aspRto": 0.75
+														},
+														{
+															"nm": "4x3",
+															"aspRto": 1.3333333333333333
+														},
+														{
+															"nm": "2x1",
+															"aspRto": 2
+														}
+													],
+													"rt": "https://i.natgeofe.com/n/f9e898d4-732c-4864-bb5f-ec7ce8dbded1/POD-14-04-2021_NationalGeographic_2201702",
+													"src": "https://i.natgeofe.com/n/f9e898d4-732c-4864-bb5f-ec7ce8dbded1/POD-14-04-2021_NationalGeographic_2201702.jpg",
+													"altText": "Picture of dolphins swimming through clear blue water in Hawaii",
+													"crdt": "Photograph by Brian Skerry, Nat Geo Image Collection",
+													"dsc": "Spinner dolphins return from foraging to a bay off Oahu, Hawaii. Spinner dolphins are highly social, gathering in groups that can number in the thousands.",
+													"ext": "jpg",
+													"ttl": "Spinner Dolphins"
+												},
+												"slug": "dolphins-hawaii-oahu-underwater",
+												"locator": "/photo-of-the-day/media-spotlight/dolphins-hawaii-oahu-underwater",
+												"cursor": "RFlOQV8wI0lEOkRSTnxkcm46c3JjOm5hdGdlbzp1bmlzb246OnByb2Q6NTAxZWQ3MjUtMzdmYS00ZTAxLWJhYmEtN2E3NDBlYjAzYmJlI1NPUlQ6b3JpZ2luYWxQdWJsaXNoZWREYXRlfDE2MTgzNjM0NzQ2MTU=",
+												"caption": {
+													"credit": "Photograph by Brian Skerry, Nat Geo Image Collection",
+													"preHeading": "April 14, 2021",
+													"text": "Spinner dolphins return from foraging to a bay off Oahu, Hawaii. Spinner dolphins are highly social, gathering in groups that can number in the thousands.",
+													"title": "Spinner Dolphins"
+												},
+												"meta": {
+													"title": "Spinner Dolphins | Nat Geo Photo of the Day",
+													"description": "Spinner dolphins swim near a bay off Oahu, Hawaii, in this image from our photography archives."
+												}
+											},
+											{
+												"img": {
+													"crps": [
+														{
+															"nm": "raw",
+															"aspRto": 1.2503052503052504
+														},
+														{
+															"nm": "16x9",
+															"aspRto": 1.7777777777777777
+														},
+														{
+															"nm": "3x2",
+															"aspRto": 1.5
+														},
+														{
+															"nm": "square",
+															"aspRto": 1
+														},
+														{
+															"nm": "2x3",
+															"aspRto": 0.6666666666666666
+														},
+														{
+															"nm": "3x4",
+															"aspRto": 0.75
+														},
+														{
+															"nm": "4x3",
+															"aspRto": 1.3333333333333333
+														},
+														{
+															"nm": "2x1",
+															"aspRto": 2
+														}
+													],
+													"rt": "https://i.natgeofe.com/n/1bc389ff-5c33-4bc9-9668-208d6aad686a/POD-13-04-2021_NationalGeographic_1212044",
+													"src": "https://i.natgeofe.com/n/1bc389ff-5c33-4bc9-9668-208d6aad686a/POD-13-04-2021_NationalGeographic_1212044.jpg",
+													"altText": "Picture of a chef harvesting apples on a rooftop garden in Vancouver",
+													"crdt": "Photograph by Diane Cook and Len Jenshel, Nat Geo Image Collection",
+													"dsc": "A story in the May 2009 issue looked at the growing trend of rooftop gardens around the world. In this photo, a chef at a Vancouver hotel harvests apples growing on the roof.",
+													"ext": "jpg",
+													"ttl": "Rooftop Garden"
+												},
+												"slug": "apples-chef-vancouver-garden",
+												"locator": "/photo-of-the-day/media-spotlight/apples-chef-vancouver-garden",
+												"cursor": "RFlOQV8wI0lEOkRSTnxkcm46c3JjOm5hdGdlbzp1bmlzb246OnByb2Q6YmE1MThmMmEtN2JhZS00NTY5LTg1MGYtOGU5Y2RkZGY4NmFjI1NPUlQ6b3JpZ2luYWxQdWJsaXNoZWREYXRlfDE2MTgyNzcwNzQ2MTU=",
+												"caption": {
+													"credit": "Photograph by Diane Cook and Len Jenshel, Nat Geo Image Collection",
+													"preHeading": "April 13, 2021",
+													"text": "A story in the May 2009 issue looked at the growing trend of rooftop gardens around the world. In this photo, a chef at a Vancouver hotel harvests apples growing on the roof.",
+													"title": "Rooftop Garden"
+												},
+												"meta": {
+													"title": "Rooftop Garden | Nat Geo Photo of the Day",
+													"description": "A chef at a Vancouver hotel harvests apples growing on the roof in this image from our photography archives."
+												}
+											},
+											{
+												"img": {
+													"crps": [
+														{
+															"nm": "raw",
+															"aspRto": 1.4808387563268258
+														},
+														{
+															"nm": "16x9",
+															"aspRto": 1.7777777777777777
+														},
+														{
+															"nm": "3x2",
+															"aspRto": 1.5
+														},
+														{
+															"nm": "square",
+															"aspRto": 1
+														},
+														{
+															"nm": "2x3",
+															"aspRto": 0.6666666666666666
+														},
+														{
+															"nm": "3x4",
+															"aspRto": 0.75
+														},
+														{
+															"nm": "4x3",
+															"aspRto": 1.3333333333333333
+														},
+														{
+															"nm": "2x1",
+															"aspRto": 2
+														}
+													],
+													"rt": "https://i.natgeofe.com/n/c9f29313-d657-4652-a303-f7f8b6415dc1/POD-12-04-2021_NationalGeographic_908062",
+													"src": "https://i.natgeofe.com/n/c9f29313-d657-4652-a303-f7f8b6415dc1/POD-12-04-2021_NationalGeographic_908062.jpg",
+													"altText": "Troops in Cameroon perform a ceremony to mark the end of Ramadan",
+													"crdt": "Photograph by James P. Blair, Nat Geo Image Collection",
+													"dsc": "In this photo from the August 1966 issue, troops participate in a ceremonial parade in front of the Palace of Rey Bouba, Cameroon, to mark the end of Ramadan.",
+													"ext": "jpg",
+													"ttl": "Ramadan Parade"
+												},
+												"slug": "cameroon-troops-ramadan-parade",
+												"locator": "/photo-of-the-day/media-spotlight/cameroon-troops-ramadan-parade",
+												"cursor": "RFlOQV8wI0lEOkRSTnxkcm46c3JjOm5hdGdlbzp1bmlzb246OnByb2Q6OTU5NDU4YWQtMWRhNi00NDRkLTllMDYtNGIyZGQ4ODU2MWEyI1NPUlQ6b3JpZ2luYWxQdWJsaXNoZWREYXRlfDE2MTgxOTA2NzQ2MTU=",
+												"caption": {
+													"credit": "Photograph by James P. Blair, Nat Geo Image Collection",
+													"preHeading": "April 12, 2021",
+													"text": "In this photo from the August 1966 issue, troops participate in a ceremonial parade in front of the Palace of Rey Bouba, Cameroon, to mark the end of Ramadan.",
+													"title": "Ramadan Parade"
+												},
+												"meta": {
+													"title": "Ramadan Parade | Nat Geo Photo of the Day",
+													"description": "Troops in Rey Bouba, Cameroon, in the 1960s perform a ceremony to mark the end of Ramadan in this image from our photography archives."
+												}
+											},
+											{
+												"img": {
+													"crps": [
+														{
+															"nm": "raw",
+															"aspRto": 1.7444633730834754
+														},
+														{
+															"nm": "16x9",
+															"aspRto": 1.7777777777777777
+														},
+														{
+															"nm": "3x2",
+															"aspRto": 1.5
+														},
+														{
+															"nm": "square",
+															"aspRto": 1
+														},
+														{
+															"nm": "2x3",
+															"aspRto": 0.6666666666666666
+														},
+														{
+															"nm": "3x4",
+															"aspRto": 0.75
+														},
+														{
+															"nm": "4x3",
+															"aspRto": 1.3333333333333333
+														},
+														{
+															"nm": "2x1",
+															"aspRto": 2
+														}
+													],
+													"rt": "https://i.natgeofe.com/n/306c277c-69c9-446f-9a36-06f14be14047/POD-11-04-2021_NationalGeographic_604054",
+													"src": "https://i.natgeofe.com/n/306c277c-69c9-446f-9a36-06f14be14047/POD-11-04-2021_NationalGeographic_604054.jpg",
+													"altText": "Picture of tourists standing in front of an elaborate rock carving near Tehran, Iran",
+													"crdt": "Photograph by F. E. Murray, Nat Geo Image Collection",
+													"dsc": "In this photo from the April 1921 issue, tourists stand in front of a 19th-century rock carving just south of Tehran, Iran. At the end of 2020, the tourism department of Tehran Province announced that the carving would undergo repair and preservation processes to combat years of damage and erosion.",
+													"ext": "jpg",
+													"ttl": "Rock of Ages"
+												},
+												"slug": "tehran-iran-rock-carving",
+												"locator": "/photo-of-the-day/media-spotlight/tehran-iran-rock-carving",
+												"cursor": "RFlOQV8wI0lEOkRSTnxkcm46c3JjOm5hdGdlbzp1bmlzb246OnByb2Q6ZDJkNWU1MzktMmIyNS00YjA5LTgzOTktM2U3MDFlZDUxMWIzI1NPUlQ6b3JpZ2luYWxQdWJsaXNoZWREYXRlfDE2MTgxMDQyNzQ2MTU=",
+												"caption": {
+													"credit": "Photograph by F. E. Murray, Nat Geo Image Collection",
+													"preHeading": "April 11, 2021",
+													"text": "In this photo from the April 1921 issue, tourists stand in front of a 19th-century rock carving just south of Tehran, Iran. At the end of 2020, the tourism department of Tehran Province announced that the carving would undergo repair and preservation processes to combat years of damage and erosion.",
+													"title": "Rock of Ages"
+												},
+												"meta": {
+													"title": "Rock of Ages | Nat Geo Photo of the Day",
+													"description": "Tourists in the early 20th century pose in front of a 19th-century rock carving near Tehran, Iran, in this image from our photography archives."
+												}
+											},
+											{
+												"img": {
+													"crps": [
+														{
+															"nm": "raw",
+															"aspRto": 1.486211901306241
+														},
+														{
+															"nm": "16x9",
+															"aspRto": 1.7777777777777777
+														},
+														{
+															"nm": "3x2",
+															"aspRto": 1.5
+														},
+														{
+															"nm": "square",
+															"aspRto": 1
+														},
+														{
+															"nm": "2x3",
+															"aspRto": 0.6666666666666666
+														},
+														{
+															"nm": "3x4",
+															"aspRto": 0.75
+														},
+														{
+															"nm": "4x3",
+															"aspRto": 1.3333333333333333
+														},
+														{
+															"nm": "2x1",
+															"aspRto": 2
+														}
+													],
+													"rt": "https://i.natgeofe.com/n/7a30d509-671f-459a-ac96-d7363dfcd81a/POD-10-04-2021_NationalGeographic_621897",
+													"src": "https://i.natgeofe.com/n/7a30d509-671f-459a-ac96-d7363dfcd81a/POD-10-04-2021_NationalGeographic_621897.jpg",
+													"altText": "Picture of a boy drinking from a freshwater pool in a forest in Indonesia",
+													"crdt": "Photograph by Bruce Dale, Nat Geo Image Collection",
+													"dsc": "On Tidore Island, Indonesia, a boy drinks from a freshwater pool. This picture appeared in a June 1976 story that retraced explorer Ferdinand Magellan's voyage around the globe.",
+													"ext": "jpg",
+													"ttl": "Fresh Water"
+												},
+												"slug": "indonesia-tidore-forest-water",
+												"locator": "/photo-of-the-day/media-spotlight/indonesia-tidore-forest-water",
+												"cursor": "RFlOQV8wI0lEOkRSTnxkcm46c3JjOm5hdGdlbzp1bmlzb246OnByb2Q6YmUwNWE2YzgtNGIwMy00YWM5LTg3MjYtMzk2YzE1YjFiMzgzI1NPUlQ6b3JpZ2luYWxQdWJsaXNoZWREYXRlfDE2MTgwMTc4NzQ2MTU=",
+												"caption": {
+													"credit": "Photograph by Bruce Dale, Nat Geo Image Collection",
+													"preHeading": "April 10, 2021",
+													"text": "On Tidore Island, Indonesia, a boy drinks from a freshwater pool. This picture appeared in a June 1976 story that retraced explorer Ferdinand Magellan's voyage around the globe.",
+													"title": "Fresh Water"
+												},
+												"meta": {
+													"title": "Fresh Water | Nat Geo Photo of the Day",
+													"description": "A boy gets a drink from a forest pool in Indonesia in this image from our photography archives."
+												}
+											},
+											{
+												"img": {
+													"crps": [
+														{
+															"nm": "raw",
+															"aspRto": 1.506990434142752
+														},
+														{
+															"nm": "16x9",
+															"aspRto": 1.7777777777777777
+														},
+														{
+															"nm": "3x2",
+															"aspRto": 1.5
+														},
+														{
+															"nm": "square",
+															"aspRto": 1
+														},
+														{
+															"nm": "2x3",
+															"aspRto": 0.6666666666666666
+														},
+														{
+															"nm": "3x4",
+															"aspRto": 0.75
+														},
+														{
+															"nm": "4x3",
+															"aspRto": 1.3333333333333333
+														},
+														{
+															"nm": "2x1",
+															"aspRto": 2
+														}
+													],
+													"rt": "https://i.natgeofe.com/n/c6138bbc-3c6e-43ad-8754-4502510e498e/POD-09-04-2021_NationalGeographic_426956",
+													"src": "https://i.natgeofe.com/n/c6138bbc-3c6e-43ad-8754-4502510e498e/POD-09-04-2021_NationalGeographic_426956.jpg",
+													"altText": "Picture of a boy getting a haircut in a barbershop in Norfolk, Virginia",
+													"crdt": "Photograph by Karen Kasmauski, Nat Geo Image Collection",
+													"dsc": "A boy gets a haircut at a barbershop in Norfolk, Virginia. This picture appeared in a July 1985 story about the communities of Hampton Roads—the name of both a body of water and the metropolitan area it touches.",
+													"ext": "jpg",
+													"ttl": "Norfolk Barbershop"
+												},
+												"slug": "barber-shop-norfolk-virginia",
+												"locator": "/photo-of-the-day/media-spotlight/barber-shop-norfolk-virginia",
+												"cursor": "RFlOQV8wI0lEOkRSTnxkcm46c3JjOm5hdGdlbzp1bmlzb246OnByb2Q6OTU2Y2EwNDktMWJkOS00ZDgzLWE4Y2EtNDI2MjY4OGRhOGQ0I1NPUlQ6b3JpZ2luYWxQdWJsaXNoZWREYXRlfDE2MTc5MzE0NzQ2MTU=",
+												"caption": {
+													"credit": "Photograph by Karen Kasmauski, Nat Geo Image Collection",
+													"preHeading": "April 9, 2021",
+													"text": "A boy gets a haircut at a barbershop in Norfolk, Virginia. This picture appeared in a July 1985 story about the communities of Hampton Roads—the name of both a body of water and the metropolitan area it touches.",
+													"title": "Norfolk Barbershop"
+												},
+												"meta": {
+													"title": "Norfolk Barbershop | Nat Geo Photo of the Day",
+													"description": "A boy gets a haircut at a barbershop in Norfolk, Virginia, in this image from our photography archives."
+												}
+											},
+											{
+												"img": {
+													"crps": [
+														{
+															"nm": "raw",
+															"aspRto": 1.0049067713444553
+														},
+														{
+															"nm": "16x9",
+															"aspRto": 1.7777777777777777
+														},
+														{
+															"nm": "3x2",
+															"aspRto": 1.5
+														},
+														{
+															"nm": "square",
+															"aspRto": 1
+														},
+														{
+															"nm": "2x3",
+															"aspRto": 0.6666666666666666
+														},
+														{
+															"nm": "3x4",
+															"aspRto": 0.75
+														},
+														{
+															"nm": "4x3",
+															"aspRto": 1.3333333333333333
+														},
+														{
+															"nm": "2x1",
+															"aspRto": 2
+														}
+													],
+													"rt": "https://i.natgeofe.com/n/bf5139ed-ff5b-41b5-917e-ccbaaaecf820/POD-08-04-2021_NationalGeographic_508009",
+													"src": "https://i.natgeofe.com/n/bf5139ed-ff5b-41b5-917e-ccbaaaecf820/POD-08-04-2021_NationalGeographic_508009.jpg",
+													"altText": "Picture of a person waving a sheet out a window in Arles, France",
+													"crdt": "Photograph by Lynn Johnson, Nat Geo Image Collection",
+													"dsc": "A person freshens a sheet out the window of a building in Arles, France. This photo originally appeared in the October 1997 issue, in a story about the life and travels of artist Vincent Van Gogh.",
+													"ext": "jpg",
+													"ttl": "French Laundry"
+												},
+												"slug": "arles-france-laundry-van-gogh",
+												"locator": "/photo-of-the-day/media-spotlight/arles-france-laundry-van-gogh",
+												"cursor": "RFlOQV8wI0lEOkRSTnxkcm46c3JjOm5hdGdlbzp1bmlzb246OnByb2Q6MDliMGY0MzctNzM4NC00ZTEwLWFjNjgtMjRkZWRkMjUzMWI5I1NPUlQ6b3JpZ2luYWxQdWJsaXNoZWREYXRlfDE2MTc4NDUwNzQ2MTU=",
+												"caption": {
+													"credit": "Photograph by Lynn Johnson, Nat Geo Image Collection",
+													"preHeading": "April 8, 2021",
+													"text": "A person freshens a sheet out the window of a building in Arles, France. This photo originally appeared in the October 1997 issue, in a story about the life and travels of artist Vincent Van Gogh.",
+													"title": "French Laundry"
+												},
+												"meta": {
+													"title": "French Laundry | Nat Geo Photo of the Day",
+													"description": "A resident of Arles, France, freshens a bedsheet out of a window in this image from our photography archives."
+												}
+											},
+											{
+												"img": {
+													"crps": [
+														{
+															"nm": "raw",
+															"aspRto": 1.5003663003663004
+														},
+														{
+															"nm": "16x9",
+															"aspRto": 1.7777777777777777
+														},
+														{
+															"nm": "3x2",
+															"aspRto": 1.5
+														},
+														{
+															"nm": "square",
+															"aspRto": 1
+														},
+														{
+															"nm": "2x3",
+															"aspRto": 0.6666666666666666
+														},
+														{
+															"nm": "3x4",
+															"aspRto": 0.75
+														},
+														{
+															"nm": "4x3",
+															"aspRto": 1.3333333333333333
+														},
+														{
+															"nm": "2x1",
+															"aspRto": 2
+														}
+													],
+													"rt": "https://i.natgeofe.com/n/73dec35e-d106-4cce-bce7-40e332fc1bad/POD-07-04-2021_NationalGeographic_2384839",
+													"src": "https://i.natgeofe.com/n/73dec35e-d106-4cce-bce7-40e332fc1bad/POD-07-04-2021_NationalGeographic_2384839.jpg",
+													"altText": "A beaver swims underwater in Grand Teton National Park",
+													"crdt": "Photograph by Charlie Hamilton James, Nat Geo Image Collection",
+													"dsc": "After being nearly eradicated by trappers in the mid-1800s, beavers are making a comeback in the West, including this river in Grand Teton National Park. To avoid predators, the large rodents can stay underwater for up to 15 minutes.",
+													"ext": "jpg",
+													"ttl": "Busy Beaver"
+												},
+												"slug": "beaver-wyoming-grand-teton",
+												"locator": "/photo-of-the-day/media-spotlight/beaver-wyoming-grand-teton",
+												"cursor": "RFlOQV8wI0lEOkRSTnxkcm46c3JjOm5hdGdlbzp1bmlzb246OnByb2Q6MDdmZmM0NDQtN2JjYS00ZjcyLWI4OTQtNzY1ZGM4ZjYyMTVhI1NPUlQ6b3JpZ2luYWxQdWJsaXNoZWREYXRlfDE2MTc3NTg2NzQ2MTU=",
+												"caption": {
+													"credit": "Photograph by Charlie Hamilton James, Nat Geo Image Collection",
+													"preHeading": "April 7, 2021",
+													"text": "After being nearly eradicated by trappers in the mid-1800s, beavers are making a comeback in the West, including this river in Grand Teton National Park. To avoid predators, the large rodents can stay underwater for up to 15 minutes.",
+													"title": "Busy Beaver"
+												},
+												"meta": {
+													"title": "Busy Beaver | Nat Geo Photo of the Day",
+													"description": "A beaver swims in Grand Teton National Park in this image from our photography archives."
+												}
+											},
+											{
+												"img": {
+													"crps": [
+														{
+															"nm": "raw",
+															"aspRto": 1.4797687861271676
+														},
+														{
+															"nm": "16x9",
+															"aspRto": 1.7777777777777777
+														},
+														{
+															"nm": "3x2",
+															"aspRto": 1.5
+														},
+														{
+															"nm": "square",
+															"aspRto": 1
+														},
+														{
+															"nm": "2x3",
+															"aspRto": 0.6666666666666666
+														},
+														{
+															"nm": "3x4",
+															"aspRto": 0.75
+														},
+														{
+															"nm": "4x3",
+															"aspRto": 1.3333333333333333
+														},
+														{
+															"nm": "2x1",
+															"aspRto": 2
+														}
+													],
+													"rt": "https://i.natgeofe.com/n/5b75003f-3b89-4dad-96e7-1996b4bb8512/POD-06-04-2021_NationalGeographic_514586",
+													"src": "https://i.natgeofe.com/n/5b75003f-3b89-4dad-96e7-1996b4bb8512/POD-06-04-2021_NationalGeographic_514586.jpg",
+													"altText": "Picture of a tent hanging off the side of a mountain in Pakistan",
+													"crdt": "Photograph by Bill Hatcher, Nat Geo Image Collection",
+													"dsc": "Climbers establish Hanging Camp at 19,500 feet on Trango Tower, in Pakistan's Karakoram mountains. This story from the April 1996 issue followed a group of climbers from Wyoming who spent nine weeks scaling the vertical rock face.",
+													"ext": "jpg",
+													"ttl": "Hanging Camp"
+												},
+												"slug": "climbing-pakistan-trango-tower",
+												"locator": "/photo-of-the-day/media-spotlight/climbing-pakistan-trango-tower",
+												"cursor": "RFlOQV8wI0lEOkRSTnxkcm46c3JjOm5hdGdlbzp1bmlzb246OnByb2Q6ZmY5ZDc1ODAtMDYxNC00YjYwLTlkZGQtMWU2NTAyOTAyNmVkI1NPUlQ6b3JpZ2luYWxQdWJsaXNoZWREYXRlfDE2MTc2NzIyNzQ2MTU=",
+												"caption": {
+													"credit": "Photograph by Bill Hatcher, Nat Geo Image Collection",
+													"preHeading": "April 6, 2021",
+													"text": "Climbers establish Hanging Camp at 19,500 feet on Trango Tower, in Pakistan's Karakoram mountains. This story from the April 1996 issue followed a group of climbers from Wyoming who spent nine weeks scaling the vertical rock face.",
+													"title": "Hanging Camp"
+												},
+												"meta": {
+													"title": "Hanging Camp | Nat Geo Photo of the Day",
+													"description": "A climber reads a book inside a tent clipped to Pakistan's Trango Tower in this image from our photography archives."
+												}
+											}
+										],
+										"disableFullscreen": true,
+										"initialCursor": 0,
+										"initialIndex": 0,
+										"theme": "dark",
+										"hasNextPage": true,
+										"hideCounter": true,
+										"size": "large"
+									}
+								],
+								"enableAds": true
+							}
+						],
+						"cmsType": "EnhancedFrame"
+					},
+					{
+						"id": "natgeo-globalpromo-ad-frame1",
+						"mods": [
+							{
+								"id": "natgeo-globalpromo-frame1-ad",
+								"cmsType": "StackModule",
+								"align": "left",
+								"edgs": [
+									{
+										"id": "natgeo-globalpromo-ad-tile",
+										"cmsType": "AdTile",
+										"pos": "infinitefeed"
+									}
+								]
+							}
+						],
+						"cmsType": "EnhancedFrame"
+					},
+					{
+						"id": "natgeo-globalpromo-frame1",
+						"fullWidth": true,
+						"mods": [
+							{
+								"id": "natgeo-globalpromo-frame1-headline",
+								"cmsType": "StackModule",
+								"align": "left",
+								"edgs": [
+									{
+										"id": "natgeo-globalpromo-headline-tile",
+										"cmsType": "HeadlineTile",
+										"heading": "Go Further"
+									}
+								]
+							},
+							{
+								"id": "natgeo-globalpromo-frame1-animals",
+								"cmsType": "CarouselModule",
+								"centerHeading": true,
+								"edgs": [
+									{
+										"id": "natgeo-globalpromo-frame1-animals-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "Citing rotten food, separating young cubs from their mothers, missing animals, and fraud, court cases aim to end the most exploitive practices.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/animals/article/tiger-king-stars-legal-cases-change-industry",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/29eee8ba-09ba-4409-8a40-99ff69f0ab8d/NationalGeographic_2756847",
+											"src": "https://i.natgeofe.com/n/29eee8ba-09ba-4409-8a40-99ff69f0ab8d/NationalGeographic_2756847.jpg",
+											"altText": "Picture of two tigers behind a cage",
+											"crdt": "Photograph by Steve Winter, Nat Geo Image Collection",
+											"dsc": "Wynnewood Oklahoma Tigers at Greater Wynnewood Exotic Animal Park made famous by Joe \"Exotic\" Schreibvogel. Now run by Jeff Lowe. This \"park\" has been famous as the #1 tiger BAD breeder in the US. You can see tigers and ligers and tiligers, crossing tigers and lions and lions and tigers. They have tiger cub petting, tiger cub selfies and interactions with other small animals. Jeff,(undercover) has 9 tigers on his property in Ringling Ok, that he saved from Joe Exotic and Jeff Lowe. He does cub petting of 3 cubs he \"saved\" to help pay for the food of the grown tigers.",
+											"ext": "jpg",
+											"ttl": "tiger-king-legel-trouble-01"
+										},
+										"abstract": "Citing rotten food, separating young cubs from their mothers, missing animals, and fraud, court cases aim to end the most exploitive practices.",
+										"title": "‘Tiger King’ stars’ face scrutiny in court",
+										"tags": [
+											{
+												"name": "Animals",
+												"id": "fa010584-7bbf-3e92-90f9-586bb27fce94",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/animals"
+											},
+											{
+												"name": "Wildlife Watch",
+												"id": "8de8cc4e-e0d1-3b72-8c7a-dac037e03cb4",
+												"type": "series",
+												"uri": "https://www.nationalgeographic.com/pages/topic/wildlife-watch"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-animals-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "Several decades after a groundbreaking album of whale \"songs\" first piqued public curiosity and started a global conservation movement, scientists continue to decode the wide array of vocalizations different whale species use to communicate.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/animals/article/why-a-whales-world-is-a-world-of-sound",
+												"text": "natgeo.ctaText.seeMore",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/87b70312-5846-4e04-8ef5-8b9f19b1bdeb/nge-whale-sounds-2021-2",
+											"src": "https://i.natgeofe.com/n/87b70312-5846-4e04-8ef5-8b9f19b1bdeb/nge-whale-sounds-2021-2.jpg",
+											"altText": "Nat Geo Explores Whale Songs",
+											"dsc": "New",
+											"ext": "jpg",
+											"ttl": "Why a whale's world is a world of sound"
+										},
+										"abstract": "Several decades after a groundbreaking album of whale \"songs\" first piqued public curiosity and started a global conservation movement, scientists continue to decode the wide array of vocalizations different whale species use to communicate.",
+										"title": "Why a whale's world is a world of sound",
+										"tags": [
+											{
+												"name": "Nat Geo Explores",
+												"id": "f24405ad-de67-3a63-8612-a8daa94c5c1b",
+												"type": "series",
+												"uri": "https://www.nationalgeographic.com/pages/topic/nat-geo-explores-video-series"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-animals-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "The arachnid, formally named after the cartoon clownfish, is the latest in a wave of peacock spider discoveries.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/animals/article/how-scientists-found-nemo-australias-newest-dancing-spider",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.4038371548900329
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/61e0c420-d1e6-4259-8b6d-be5e019d5118/Nemo 2",
+											"src": "https://i.natgeofe.com/n/61e0c420-d1e6-4259-8b6d-be5e019d5118/Nemo 2.jpg",
+											"altText": "Picture of a spider with orange stripes on a leaf",
+											"crdt": "Photograph by Joseph Schubert",
+											"dsc": "'Maratus nemo the Nemo Peacock Spider standing on the surface of a leaf'.",
+											"ext": "jpg",
+											"ttl": "maratus-nemo"
+										},
+										"abstract": "The arachnid, formally named after the cartoon clownfish, is the latest in a wave of peacock spider discoveries.",
+										"title": "How scientists found 'Nemo,' Australia's newest dancing spider",
+										"tags": [
+											{
+												"name": "Animals",
+												"id": "fa010584-7bbf-3e92-90f9-586bb27fce94",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/animals"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-animals-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "New research on Indian jumping ants shows they can undergo dramatic reversible changes previously unknown in insects.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/animals/article/indian-jumping-ants-shrink-and-regrow-brains",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/30670fb9-7f27-46aa-9880-9142e1ca81d8/Camera-1-2-2-2",
+											"src": "https://i.natgeofe.com/n/30670fb9-7f27-46aa-9880-9142e1ca81d8/Camera-1-2-2-2.jpg",
+											"altText": "Picture of an ant on a green branch",
+											"crdt": "Photograph by Clint Penick",
+											"dsc": "Ant with an ability to regrow its brain",
+											"ext": "jpg",
+											"ttl": "ants-regrow-brains"
+										},
+										"abstract": "New research on Indian jumping ants shows they can undergo dramatic reversible changes previously unknown in insects.",
+										"title": "These ants can shrink and regrow their brains",
+										"tags": [
+											{
+												"name": "Animals",
+												"id": "fa010584-7bbf-3e92-90f9-586bb27fce94",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/animals"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-animals-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "Scientists struggle to explain why the gray whale population plummeted by nearly a quarter between 2016 and 2020.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/animals/article/why-are-so-many-gray-whales-dying-in-the-pacific",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.7804154302670623
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/d025eac4-1755-401f-a124-e8f0a744f217/NGD-87646-20_20210206_0003267",
+											"src": "https://i.natgeofe.com/n/d025eac4-1755-401f-a124-e8f0a744f217/NGD-87646-20_20210206_0003267.jpg",
+											"altText": "Picture of a whale blowing water with a rainbow above it",
+											"crdt": "Photograph by Meghan Dhaliwal",
+											"dsc": "February 6, 2021 - An adult grey whale swims in the calm waters just outside of the “Boca de Soledad,” the mouth where the Pacific ocean meets the series of bays known as the Bahía Magdalena. Grey whales migrate for six months a year—three months to travel down from their feeding grounds in Alaska to Baja Sur, Mexico, three months to calve in Baja Sur, three months to travel back north and three months of feeding in Alaska waters. Grey whales are baleen whales, meaning that they survive by eating tons of fat-rich microorganisms. Grey whales have been dying along their migration route at unexplainable rates (the NOAA is calling their deaths a UME, or an Unexplained Mortality Event) but scientists are beginning to theorize that warming seas are killing off the whale’s main food source in the north, leaving them malnourished on their migration. Image by Meghan Dhaliwal",
+											"ext": "jpg",
+											"ttl": "grey-whales-01"
+										},
+										"abstract": "Scientists struggle to explain why the gray whale population plummeted by nearly a quarter between 2016 and 2020.",
+										"title": "Why are so many gray whales dying?",
+										"tags": [
+											{
+												"name": "Animals",
+												"id": "fa010584-7bbf-3e92-90f9-586bb27fce94",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/animals"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-animals-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "King Kong made the behavior famous, but scientists still know little about why the great apes perform this percussive display.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/animals/article/why-do-gorillas-beat-their-chests",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.5003663003663004
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/701e422d-4d58-4ec1-9574-8bb1791d184b/2BNN0BJ",
+											"src": "https://i.natgeofe.com/n/701e422d-4d58-4ec1-9574-8bb1791d184b/2BNN0BJ.jpg",
+											"altText": "A black mountain gorilla beating its chest in the jungle",
+											"crdt": "Nature Picture Library / Alamy Stock Photo",
+											"dsc": "Mountain gorilla (Gorilla gorilla beringei) blackback Shirimpumu displaying, non dominant male, Sabyinyo Group, Volcanoes National Park, Virunga Mount",
+											"ext": "jpg",
+											"ttl": "Mountain Gorilla Chest Beating"
+										},
+										"abstract": "King Kong made the behavior famous, but scientists still know little about why the great apes perform this percussive display.",
+										"title": "Why do male gorillas beat their chests? New study offers intriguing evidence",
+										"tags": [
+											{
+												"name": "Animals",
+												"id": "fa010584-7bbf-3e92-90f9-586bb27fce94",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/animals"
+											}
+										]
+									}
+								],
+								"heading": "Animals",
+								"pageInfo": {
+									"endCursor": "NTpSRmxPUVY4d0kwbEVPa1JTVG54a2NtNDZjM0pqT201aGRHZGxienAxYm1semIyNDZPbkJ5YjJRNllUQmhOVGd4WmpFdE1HRTVNaTAwTm1aaUxXSTJNemd0WWpJM01UYzBORFE1T1dWa0kxTlBVbFE2YjNKcFoybHVZV3hRZFdKc2FYTm9aV1JFWVhSbGZERTJNVGM0T1RRd016YzVNRGs9",
+									"hasNextPage": true
+								},
+								"templateContext": "eyJjb250ZW50VHlwZSI6IlVuaXNvblBhZ2VDb250ZW50IiwidmFyaWFibGVzIjp7ImluY2x1ZGVNZWRpYUNvbnRlbnRzIjp0cnVlLCJjb250ZW50VHlwZSI6InBhZ2UiLCJsb2NhdG9yIjoiL3Bob3RvLW9mLXRoZS1kYXkiLCJwb3J0Zm9saW8iOiJuYXRnZW8iLCJxdWVyeVR5cGUiOiJMT0NBVE9SIn0sIm1vZHVsZUlkIjpudWxsfQ"
+							},
+							{
+								"id": "natgeo-globalpromo-frame1-environment",
+								"cmsType": "CarouselModule",
+								"centerHeading": true,
+								"edgs": [
+									{
+										"id": "natgeo-globalpromo-frame1-history-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "Personal protective equipment is made of plastic and isn't recyclable. Now it’s being found everywhere on earth, including the oceans. The solution isn’t complicated: Throw them away.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/environment/article/how-to-stop-discarded-face-masks-from-polluting-the-planet",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.5003663003663004
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/7269d262-9772-4b23-906d-c50f631db686/STOCK_DSC8177",
+											"src": "https://i.natgeofe.com/n/7269d262-9772-4b23-906d-c50f631db686/STOCK_DSC8177.jpg",
+											"altText": "a California sea lion encounters a discarded face mask",
+											"crdt": "Photograph by Ralph Pace",
+											"dsc": "The COVID - 19 pandemic’s effects extend to ocean ecosystems. Here, a California sea lion encounters a discarded face mask in the waters off Monterey.",
+											"ext": "jpg",
+											"ttl": "ppe-plastic"
+										},
+										"abstract": "Personal protective equipment is made of plastic and isn't recyclable. Now it’s being found everywhere on earth, including the oceans. The solution isn’t complicated: Throw them away.",
+										"title": "How to stop discarded face masks from polluting the planet",
+										"tags": [
+											{
+												"name": "Environment",
+												"id": "623ce370-3e67-3fb2-b9a5-070ceb9b2de5",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/environment"
+											},
+											{
+												"name": "Planet Possible",
+												"id": "938b311e-8648-368e-8058-12100da9e069",
+												"type": "series",
+												"uri": "https://www.nationalgeographic.com/pages/topic/planet-possible"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-history-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "Once found near present-day St. Louis in Illinois, Cahokia suddenly declined 600 years ago, and no one knows why.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/environment/article/why-was-ancient-city-of-cahokia-abandoned-new-clues-rule-out-one-theory",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.5003663003663004
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/80f016c0-5655-4260-830d-43baa69779a1/NationalGeographic_1381718",
+											"src": "https://i.natgeofe.com/n/80f016c0-5655-4260-830d-43baa69779a1/NationalGeographic_1381718.jpg",
+											"altText": "a couple of mounds of green grass growing over what used to be Cahokia's central plaza",
+											"crdt": "Photograph by Ira Block, Nat Geo Image Collection",
+											"dsc": "Cahokia's central plaza is now part of a 2,200-acre historical site.",
+											"ext": "jpg",
+											"ttl": "cahokia-trees"
+										},
+										"abstract": "Once found near present-day St. Louis in Illinois, Cahokia suddenly declined 600 years ago, and no one knows why.",
+										"title": "Why was the ancient city of Cahokia abandoned? New clues rule out one theory.",
+										"tags": [
+											{
+												"name": "Environment",
+												"id": "623ce370-3e67-3fb2-b9a5-070ceb9b2de5",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/environment"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-history-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "Recent studies suggest lightning in the far North could double by 2100 and that the increase may already be underway.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/environment/article/once-rare-arctic-lighting-is-now-more-frequent-and-may-reshape-the-region",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.5058823529411765
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/6993a0ab-790d-467d-b9db-d85b5c5ccb9d/C44AHH",
+											"src": "https://i.natgeofe.com/n/6993a0ab-790d-467d-b9db-d85b5c5ccb9d/C44AHH.jpg",
+											"altText": "a lightning bolt across the sky",
+											"crdt": "Photograph by Prisma by Dukas Presseagentur GmbH/Alamy Stock Photo",
+											"dsc": "Lightning flashes during a storm, Yukon, August.",
+											"ext": "jpg",
+											"ttl": "arctic-lightning"
+										},
+										"abstract": "Recent studies suggest lightning in the far North could double by 2100 and that the increase may already be underway.",
+										"title": "Once-rare Arctic lightning is now more frequent—and may reshape the region",
+										"tags": [
+											{
+												"name": "Environment",
+												"id": "623ce370-3e67-3fb2-b9a5-070ceb9b2de5",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/environment"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-history-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "The tiny fishing fleet from St. Paul is losing the fight for halibut, up against factory ships that throw away more of the valuable fish than the Indigenous fishers are allowed to catch.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/environment/article/halibut-decline-alaska-native-fishers-square-off-against-industrial-fleets",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.5003663003663004
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/e10a72e4-a29d-4da9-ba31-23f8b96ef79d/01_R3W70K",
+											"src": "https://i.natgeofe.com/n/e10a72e4-a29d-4da9-ba31-23f8b96ef79d/01_R3W70K.jpg",
+											"crdt": "Photograph by Danita Delimont, Alamy",
+											"dsc": "Halibut fishing with halibut on the line in Amalik Bay, Alaska.",
+											"ext": "jpg",
+											"ttl": "halibut-on-hook"
+										},
+										"abstract": "The tiny fishing fleet from St. Paul is losing the fight for halibut, up against factory ships that throw away more of the valuable fish than the Indigenous fishers are allowed to catch.",
+										"title": "As halibut decline, Alaska Native fishers square off against industrial fleets",
+										"tags": [
+											{
+												"name": "Environment",
+												"id": "623ce370-3e67-3fb2-b9a5-070ceb9b2de5",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/environment"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-history-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "Millions of gallons of wastewater discharged into Tampa Bay may spur red tides or other harmful algae blooms.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/environment/article/hazardous-spill-in-florida-highlights-environmental-threat-decades-in-the-making",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.524390243902439
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/7faab6f8-3f78-4e9f-9f90-ace1f3c3895a/AP_21093756393130",
+											"src": "https://i.natgeofe.com/n/7faab6f8-3f78-4e9f-9f90-ace1f3c3895a/AP_21093756393130.jpg",
+											"altText": "a reservoir near the old piney point phosphate mine seen from an airplane",
+											"crdt": "Photograph by Tiffany Tompkins, The Bradenton Herald/AP",
+											"dsc": "This aerial photo taken from an airplane shows a reservoir near the old Piney Point phosphate mine, Saturday, April 3, 2021 in Bradenton, Fla. Florida Gov. Ron DeSantis declared a state of emergency Saturday after a significant leak at a large pond of wastewater threatened to flood roads and burst a system that stores polluted waters. The pond where the leak was discovered is at the old Piney Point phosphate mine, sitting in a stack of phosphogypsum, a waste product from manufacturing fertilizer that is radioactive.",
+											"ext": "jpg",
+											"ttl": "wastewater-reservoir-leak"
+										},
+										"abstract": "Millions of gallons of wastewater discharged into Tampa Bay may spur red tides or other harmful algae blooms.",
+										"title": "Hazardous spill in Florida highlights environmental threat decades in the making",
+										"tags": [
+											{
+												"name": "Environment",
+												"id": "623ce370-3e67-3fb2-b9a5-070ceb9b2de5",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/environment"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-history-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "Buildings are responsible for a lot of carbon emissions. Weaning them off fossil fuels is a key part of the climate solution.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/environment/article/gas-heat-and-stoves-are-warming-the-climate-should-cities-start-banning-them",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/ee9f5341-8626-4042-b8f7-edea6d730cc9/GettyImages-1178154175",
+											"src": "https://i.natgeofe.com/n/ee9f5341-8626-4042-b8f7-edea6d730cc9/GettyImages-1178154175.jpg",
+											"altText": "a chef preparing a meal on a gas burner stove",
+											"crdt": "Photograph by Charli Bandit, Getty Images",
+											"dsc": "Chef preparing a healthy dish",
+											"ext": "jpg"
+										},
+										"abstract": "Buildings are responsible for a lot of carbon emissions. Weaning them off fossil fuels is a key part of the climate solution.",
+										"title": "Gas heat and stoves are warming the climate. Should cities start banning them?",
+										"tags": [
+											{
+												"name": "Environment",
+												"id": "623ce370-3e67-3fb2-b9a5-070ceb9b2de5",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/environment"
+											},
+											{
+												"name": "Planet Possible",
+												"id": "938b311e-8648-368e-8058-12100da9e069",
+												"type": "series",
+												"uri": "https://www.nationalgeographic.com/pages/topic/planet-possible"
+											}
+										]
+									}
+								],
+								"heading": "Environment",
+								"pageInfo": {
+									"endCursor": "NTpSRmxPUVY4d0kwbEVPa1JTVG54a2NtNDZjM0pqT201aGRHZGxienAxYm1semIyNDZPbkJ5YjJRNk1Ea3lNVFEyTXpFdE4ySmlNUzAwWTJNMkxXSXpPR1V0TldReVpHRTFZakE0WldKa0kxTlBVbFE2YjNKcFoybHVZV3hRZFdKc2FYTm9aV1JFWVhSbGZERTJNVGN6TmpreU1qQXpOemc9",
+									"hasNextPage": true
+								},
+								"templateContext": "eyJjb250ZW50VHlwZSI6IlVuaXNvblBhZ2VDb250ZW50IiwidmFyaWFibGVzIjp7ImluY2x1ZGVNZWRpYUNvbnRlbnRzIjp0cnVlLCJjb250ZW50VHlwZSI6InBhZ2UiLCJsb2NhdG9yIjoiL3Bob3RvLW9mLXRoZS1kYXkiLCJwb3J0Zm9saW8iOiJuYXRnZW8iLCJxdWVyeVR5cGUiOiJMT0NBVE9SIn0sIm1vZHVsZUlkIjpudWxsfQ"
+							},
+							{
+								"id": "natgeo-globalpromo-frame1-history",
+								"cmsType": "CarouselModule",
+								"centerHeading": true,
+								"edgs": [
+									{
+										"id": "natgeo-globalpromo-frame1-history-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "Stolen along with the French Crown jewels, this prized blue diamond stayed lost for centuries until the detective work of historians and scientists cracked the case.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/history/history-magazine/article/science-solved-mystery-stolen-french-blue-diamond",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.5003663003663004
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/8a4cae81-ba81-4eb7-87a0-fd2f83b927e2/french-blue-og",
+											"src": "https://i.natgeofe.com/n/8a4cae81-ba81-4eb7-87a0-fd2f83b927e2/french-blue-og.jpg",
+											"ext": "jpg"
+										},
+										"abstract": "Stolen along with the French Crown jewels, this prized blue diamond stayed lost for centuries until the detective work of historians and scientists cracked the case.",
+										"title": "Stolen in 1792, the French Blue diamond's fate puzzled historians for centuries",
+										"tags": [
+											{
+												"name": "History Magazine",
+												"id": "9e8034f6-2e16-3b86-998b-56f8ff9dffb7",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/history/magazine"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-history-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "The 3,400-year-old royal city was built by Amenhotep III, abandoned by his heretic son, Akhenaten, and contains stunningly preserved remains.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/history/article/lost-golden-city-luxor-discovered-archaeologists-egypt",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.3342019543973943
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/7daa284d-e71a-445e-9cec-e57df896c205/01-luxor-egypt-golden-city",
+											"src": "https://i.natgeofe.com/n/7daa284d-e71a-445e-9cec-e57df896c205/01-luxor-egypt-golden-city.jpg",
+											"altText": "Mudbrick walls preserved in Egypt",
+											"crdt": "Courtesy of Zahi Hawass",
+											"dsc": "Mudbrick walls preserved to unusual height and wavy “zig-zag” walls- “The second area which is still partly uncovered, is the administrative and residential district, with larger and well-arranged units. This area is fenced in by a zigzag wall, with only one access point leading to internal corridors and residential areas. The single entrance makes us think it was some sort of security, with the ability to control entry and exit to enclosed areas.”",
+											"ext": "jpg",
+											"ttl": "01-luxor-egypt-golden-city"
+										},
+										"abstract": "The 3,400-year-old royal city was built by Amenhotep III, abandoned by his heretic son, Akhenaten, and contains stunningly preserved remains.",
+										"title": "'Lost golden city of Luxor' discovered by archaeologists in Egypt",
+										"tags": [
+											{
+												"name": "History & Culture",
+												"id": "b0c8dd52-23a8-34c0-a940-f46792bc9e70",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/history"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-history-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "With settlements stretching from Ireland to Turkey, this Iron Age culture used their metalworking skills to build extensive trade networks with ancient Greece and Rome.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/history/history-magazine/article/who-were-the-celts",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.5003663003663004
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/53b70d51-8ba6-4e7e-bb74-d08238ff4a91/scabbards-switzerland",
+											"src": "https://i.natgeofe.com/n/53b70d51-8ba6-4e7e-bb74-d08238ff4a91/scabbards-switzerland.jpg",
+											"altText": "Four ornate swords",
+											"crdt": "BERTHOLD STEINHILBER/LAIF/CORDON PRESS",
+											"dsc": "These iron and bronze scabbards were found in Switzerland, the product of the Celtic civilization known as La Tène. Emerging in the fifth-century b.c., aspects of the La Tène culture spread to western Europe and are closely associated with modern notions of Celtic patterns and style.",
+											"ext": "jpg"
+										},
+										"abstract": "With settlements stretching from Ireland to Turkey, this Iron Age culture used their metalworking skills to build extensive trade networks with ancient Greece and Rome.",
+										"title": "Who were the Celts?",
+										"tags": [
+											{
+												"name": "History Magazine",
+												"id": "9e8034f6-2e16-3b86-998b-56f8ff9dffb7",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/history/magazine"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-history-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "From their start as “moral homes” to glamorous post-war residences, the hotels offered freedom and community for women redefining America’s idea of their place in society.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/history/article/lost-age-women-only-hotels",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 0.849609375
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/c9a48682-8b07-4b16-a3f9-1064d5684ddf/931117282",
+											"src": "https://i.natgeofe.com/n/c9a48682-8b07-4b16-a3f9-1064d5684ddf/931117282.jpg",
+											"crdt": "Courtesy of Byron Company / Museum of the City of New York",
+											"dsc": "The reception room of the Y.W.C.A/Margaret Louisa Home at 14 East 16th Street, 1907.",
+											"ext": "jpg",
+											"ttl": "Charities, Y.W.C.A. Building, Margaret Louisa Home."
+										},
+										"abstract": "From their start as “moral homes” to glamorous post-war residences, the hotels offered freedom and community for women redefining America’s idea of their place in society.",
+										"title": "The lost age of women-only hotels",
+										"tags": [
+											{
+												"name": "History & Culture",
+												"id": "b0c8dd52-23a8-34c0-a940-f46792bc9e70",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/history"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-history-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "A gala parade in Cairo celebrates the golden age of the pharaohs, including one who flew to Paris for a makeover in 1976.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/history/article/egyptian-royal-mummies-are-moving-not-first-road-trip",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.4916241806263658
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/325552b5-6a48-4763-8f0d-b9c7e3d211b0/resized-KLG6337r658f35",
+											"src": "https://i.natgeofe.com/n/325552b5-6a48-4763-8f0d-b9c7e3d211b0/resized-KLG6337r658f35.jpg",
+											"crdt": "Photograph by Kenneth Garrett",
+											"dsc": "Mummy of Seti I, 19th dynasty, New Kingdom, Egypt, Egyptian Museum, Cairo",
+											"ext": "jpg",
+											"ttl": "Portrait of Seti I"
+										},
+										"abstract": "A gala parade in Cairo celebrates the golden age of the pharaohs, including one who flew to Paris for a makeover in 1976.",
+										"title": "Egypt’s royal mummies are on the move",
+										"tags": [
+											{
+												"name": "History & Culture",
+												"id": "b0c8dd52-23a8-34c0-a940-f46792bc9e70",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/history"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-history-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "It’s an honor nearly as old as the major league itself—but in 1910, President William Howard Taft transformed the first pitch into the popular ceremony it is today.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/history/article/first-pitch-baseball-opening-day-tradition",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.5003663003663004
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/d19d2213-ab22-4cd2-ab33-8e550b55c115/baseball-first-pitch-og2",
+											"src": "https://i.natgeofe.com/n/d19d2213-ab22-4cd2-ab33-8e550b55c115/baseball-first-pitch-og2.jpg",
+											"ext": "jpg"
+										},
+										"abstract": "It’s an honor nearly as old as the major league itself—but in 1910, President William Howard Taft transformed the first pitch into the popular ceremony it is today.",
+										"title": "How the first pitch became baseball's Opening Day tradition",
+										"tags": [
+											{
+												"name": "History & Culture",
+												"id": "b0c8dd52-23a8-34c0-a940-f46792bc9e70",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/history"
+											}
+										]
+									}
+								],
+								"heading": "History & Culture",
+								"pageInfo": {
+									"endCursor": "NTpSRmxPUVY4d0kwbEVPa1JTVG54a2NtNDZjM0pqT201aGRHZGxienAxYm1semIyNDZPbkJ5YjJRNlpHVTVZVGhoWWpRdFltUXdaUzAwTVRnM0xUbG1NMlF0T0RJeVl6azNPREV3TVdJMkkxTlBVbFE2YjNKcFoybHVZV3hRZFdKc2FYTm9aV1JFWVhSbGZERTJNVGN5TmpnMk1qQXdNREE9",
+									"hasNextPage": true
+								},
+								"templateContext": "eyJjb250ZW50VHlwZSI6IlVuaXNvblBhZ2VDb250ZW50IiwidmFyaWFibGVzIjp7ImluY2x1ZGVNZWRpYUNvbnRlbnRzIjp0cnVlLCJjb250ZW50VHlwZSI6InBhZ2UiLCJsb2NhdG9yIjoiL3Bob3RvLW9mLXRoZS1kYXkiLCJwb3J0Zm9saW8iOiJuYXRnZW8iLCJxdWVyeVR5cGUiOiJMT0NBVE9SIn0sIm1vZHVsZUlkIjpudWxsfQ"
+							},
+							{
+								"id": "natgeo-globalpromo-frame1-science",
+								"cmsType": "CarouselModule",
+								"centerHeading": true,
+								"edgs": [
+									{
+										"id": "natgeo-globalpromo-frame1-science-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "Experts are figuring out how to rapidly diagnose and treat the unusual clots linked to both the Johnson & Johnson and AstraZeneca shots.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/science/article/what-we-know-about-the-super-rare-blood-clots-linked-to-the-johnson-johnson-vaccine",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.5003663003663004
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/160f54dd-7ebe-459e-b2d4-9a69e992cd90/GettyImages-1230141584",
+											"src": "https://i.natgeofe.com/n/160f54dd-7ebe-459e-b2d4-9a69e992cd90/GettyImages-1230141584.jpg",
+											"altText": "blood clots",
+											"crdt": "Photograph by Michael Ciaglo, Getty Images",
+											"dsc": "Rocky Mountain Regional VA Medical Center investigational pharmacy technician Sara Berech is reflected in the glass of a fume hood as she prepares a dose of the Johnson & Johnson COVID-19 vaccine for a clinical trial on December 15, 2020 in Aurora, Colorado. The Johnson & Johnson vaccine could be submitted for emergency use by late January and is the only vaccine among leading candidates given as a single dose.",
+											"ext": "jpg",
+											"ttl": "blood clot"
+										},
+										"abstract": "Experts are figuring out how to rapidly diagnose and treat the unusual clots linked to both the Johnson & Johnson and AstraZeneca shots.",
+										"title": "What we know about the super-rare blood clots linked to the J&J vaccine",
+										"tags": [
+											{
+												"name": "Science",
+												"id": "2af51eeb-09a8-3bcf-8467-6b2a08edb76c",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/science"
+											},
+											{
+												"name": "Coronavirus Coverage",
+												"id": "a92c48ec-5e34-3b63-a1e1-2726bfc4c34e",
+												"type": "series",
+												"uri": "https://www.nationalgeographic.com/science/topic/coronavirus-coverage"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-science-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "A massive effort to view a black hole in multiple ways is helping scientists untangle what happens when gravity is pushed to extremes.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/science/article/new-black-hole-images-contain-clues-to-cosmic-mysteries",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 0.9905
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/48bc0d55-db36-44b4-831e-360639c5e59c/m87_lo_april11_polarimetric_average_image_ml_deband-cc-8bit-srgb",
+											"src": "https://i.natgeofe.com/n/48bc0d55-db36-44b4-831e-360639c5e59c/m87_lo_april11_polarimetric_average_image_ml_deband-cc-8bit-srgb.jpg",
+											"altText": "black hole",
+											"crdt": "Image by EHT Collaboration",
+											"dsc": "A view of the M87 supermassive black hole in polarised light: The Event Horizon Telescope (EHT) collaboration, who produced the first ever image of a black hole released in 2019, has today a new view of the massive object at the centre of the Messier 87 (M87) galaxy: how it looks in polarised light. This is the first time astronomers have been able to measure polarisation, a signature of magnetic fields, this close to the edge of a black hole. This image shows the polarised view of the black hole in M87. The lines mark the orientation of polarisation, which is related to the magnetic field around the shadow of the black hole.",
+											"ext": "jpg",
+											"ttl": "black hole"
+										},
+										"abstract": "A massive effort to view a black hole in multiple ways is helping scientists untangle what happens when gravity is pushed to extremes.",
+										"title": "New black hole images contain clues to cosmic mysteries",
+										"tags": [
+											{
+												"name": "Science",
+												"id": "2af51eeb-09a8-3bcf-8467-6b2a08edb76c",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/science"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-science-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "New research shows how employers and tech companies can maintain the positive aspects of remote work while reducing the psychological drain, particularly for women.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/science/article/zoom-fatigue-may-be-with-us-for-years-heres-how-well-cope",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.499267935578331
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/2b343476-7790-460a-879c-f7407e25ea8a/GettyImages-1228180877",
+											"src": "https://i.natgeofe.com/n/2b343476-7790-460a-879c-f7407e25ea8a/GettyImages-1228180877.jpg",
+											"altText": "zoom fatigue",
+											"crdt": "Photograph by Stefan Wermuth, Bloomberg via Getty Images",
+											"dsc": "zoom fatigue",
+											"ext": "jpg",
+											"ttl": "Zoom fatigue"
+										},
+										"abstract": "New research shows how employers and tech companies can maintain the positive aspects of remote work while reducing the psychological drain, particularly for women.",
+										"title": "'Zoom fatigue' may be with us for years. Here's how we'll cope.",
+										"tags": [
+											{
+												"name": "Science",
+												"id": "2af51eeb-09a8-3bcf-8467-6b2a08edb76c",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/science"
+											},
+											{
+												"name": "Coronavirus Coverage",
+												"id": "a92c48ec-5e34-3b63-a1e1-2726bfc4c34e",
+												"type": "series",
+												"uri": "https://www.nationalgeographic.com/science/topic/coronavirus-coverage"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-science-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "A new study maps out the diversity of our shrieks and wails, raising questions about the evolution of this primal vocalization.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/science/article/screams-may-convey-at-least-six-emotions",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 0.7798933739527799
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/a7995b0a-7729-4e39-bc23-f3f17a1264d4/G2G59J",
+											"src": "https://i.natgeofe.com/n/a7995b0a-7729-4e39-bc23-f3f17a1264d4/G2G59J.jpg",
+											"crdt": "Photograph by Glasshouse Images, Alamy Stock Photo",
+											"dsc": "Humans scream from a wide range of emotions, from anguish to elation. Studying the diversity of our non-verbal vocalizations could help give clues to the origins of speech.",
+											"ext": "jpg",
+											"ttl": "scream"
+										},
+										"abstract": "A new study maps out the diversity of our shrieks and wails, raising questions about the evolution of this primal vocalization.",
+										"title": "Human screams can convey at least six emotions",
+										"tags": [
+											{
+												"name": "Science",
+												"id": "2af51eeb-09a8-3bcf-8467-6b2a08edb76c",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/science"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-science-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "Microbiologists are looking at new ways to fight viral infections, including COVID-19, with the bacteria already living in your intestine.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/science/article/microbes-in-your-gut-may-be-new-recruits-in-the-fight-against-viruses",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/7c6be3e2-2db4-46fe-bc20-653d1e8c2c7c/GutBiome_2745736",
+											"src": "https://i.natgeofe.com/n/7c6be3e2-2db4-46fe-bc20-653d1e8c2c7c/GutBiome_2745736.jpg",
+											"altText": "A scanning electron microscope image of Escherichia coli",
+											"asstSrc": "NatGeo Image Collection",
+											"crdt": "MARTIN OEGGERLI NatGeo Image Collection",
+											"dsc": "Escherichia coli, the yellow rods clustered on a purple substrate.",
+											"ext": "jpg",
+											"ttl": "GutBiome"
+										},
+										"abstract": "Microbiologists are looking at new ways to fight viral infections, including COVID-19, with the bacteria already living in your intestine.",
+										"title": "Microbes in your gut may be new recruits in the fight against viruses",
+										"tags": [
+											{
+												"name": "Science",
+												"id": "2af51eeb-09a8-3bcf-8467-6b2a08edb76c",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/science"
+											},
+											{
+												"name": "Coronavirus Coverage",
+												"id": "a92c48ec-5e34-3b63-a1e1-2726bfc4c34e",
+												"type": "series",
+												"uri": "https://www.nationalgeographic.com/science/topic/coronavirus-coverage"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-science-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "These are the COVID-19 vaccine prospects that have made it to phase three trials and beyond.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/science/article/coronavirus-vaccine-tracker-how-they-work-latest-developments-cvd",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.5375375375375376
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/fec83cd2-27b6-42b9-be50-299dad941df8/vaccine-1230603423",
+											"src": "https://i.natgeofe.com/n/fec83cd2-27b6-42b9-be50-299dad941df8/vaccine-1230603423.jpg",
+											"altText": "woman receives vaccine",
+											"crdt": "Photograph by Frederic J. Brown, AFP via Getty Images",
+											"dsc": "A registered nurse administers the COVID-19 vaccine into the arm of a woman at the Corona High School gymnasium in the Riverside County city of Corona, California on January 15, 2021, a day after California began offering the coronavirus vaccine to residents 65 and older. - US President-elect Joe Biden was set to announce his Covid-19 vaccine rollout plan Friday as he bids to wrest the focus from the impeachment of Donald Trump to the agenda for his first days in office. Biden has said he wants 100 million Americans to receive shots during his first 100 days in office, an ambitious goal that would require a big step up in the current pace of distribution. (Photo by Frederic J. BROWN / AFP) (Photo by FREDERIC J. BROWN/AFP via Getty Images)",
+											"ext": "jpg",
+											"ttl": "vaccine-1230603423"
+										},
+										"abstract": "These are the COVID-19 vaccine prospects that have made it to phase three trials and beyond.",
+										"title": "U.S. calls for pause on Johnson & Johnson vaccine after new cases of rare blood clots",
+										"tags": [
+											{
+												"name": "Science",
+												"id": "2af51eeb-09a8-3bcf-8467-6b2a08edb76c",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/science"
+											},
+											{
+												"name": "Coronavirus Coverage",
+												"id": "a92c48ec-5e34-3b63-a1e1-2726bfc4c34e",
+												"type": "series",
+												"uri": "https://www.nationalgeographic.com/science/topic/coronavirus-coverage"
+											}
+										]
+									}
+								],
+								"heading": "Science",
+								"pageInfo": {
+									"endCursor": "NTpSRmxPUVY4d0kwbEVPa1JTVG54a2NtNDZjM0pqT201aGRHZGxienAxYm1semIyNDZPbkJ5YjJRNlpERmxZVEl4TnpNdFpqTXhaaTAwWmpFNExXSTVNemd0Wm1VMlkySmpOVGcwTlRoaEkxTlBVbFE2YjNKcFoybHVZV3hRZFdKc2FYTm9aV1JFWVhSbGZERTJNVGd6TVRrME1ESTNNREk9",
+									"hasNextPage": true
+								},
+								"templateContext": "eyJjb250ZW50VHlwZSI6IlVuaXNvblBhZ2VDb250ZW50IiwidmFyaWFibGVzIjp7ImluY2x1ZGVNZWRpYUNvbnRlbnRzIjp0cnVlLCJjb250ZW50VHlwZSI6InBhZ2UiLCJsb2NhdG9yIjoiL3Bob3RvLW9mLXRoZS1kYXkiLCJwb3J0Zm9saW8iOiJuYXRnZW8iLCJxdWVyeVR5cGUiOiJMT0NBVE9SIn0sIm1vZHVsZUlkIjpudWxsfQ"
+							},
+							{
+								"id": "natgeo-globalpromo-frame1-travel",
+								"cmsType": "CarouselModule",
+								"centerHeading": true,
+								"edgs": [
+									{
+										"id": "natgeo-globalpromo-frame1-travel-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "Legendary oceanographer Sylvia Earle and pioneers of marine science describe the incredible work being undertaken to protect our oceans’ ecosystem.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/travel/article/perpetual-planet-sylvia-earle-and-marine-scientists-work-to-protect-our-oceans-ecosystem",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.5067805123053742
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/c34671eb-fffb-4637-a48c-c76b8e30b876/PerpetualPlanetHeroesOfTheOceans_Bardout_01",
+											"src": "https://i.natgeofe.com/n/c34671eb-fffb-4637-a48c-c76b8e30b876/PerpetualPlanetHeroesOfTheOceans_Bardout_01.jpg",
+											"crdt": "Photograph Courtesy Rolex",
+											"dsc": "There are incredible aerial views throughout Moorea and the Motu Ahi of lagoons and mountains.",
+											"ext": "jpg",
+											"ttl": "Perpetual Planet aerial view"
+										},
+										"abstract": "Legendary oceanographer Sylvia Earle and pioneers of marine science describe the incredible work being undertaken to protect our oceans’ ecosystem.",
+										"title": "Sylvia Earle and marine scientists work to protect our oceans’ ecosystem.",
+										"tags": [
+											"Partner Content"
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-travel-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "Disastrous journeys tend to be transformative and more memorable than perfect ones—and actually make us happier.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/travel/article/why-bad-trips-can-make-for-great-stories",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.41917502787068
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/41402bed-8ce5-46b7-b763-3a9ebece762c/GettyImages-964919734",
+											"src": "https://i.natgeofe.com/n/41402bed-8ce5-46b7-b763-3a9ebece762c/GettyImages-964919734.jpg",
+											"altText": "Men on a boat",
+											"crdt": "Photograph by Herbert Ponting, Royal Geographical Society/Getty Images",
+											"dsc": "Entering the Pack; Fo'castle of the Terra Nova, Antarctica, 9th December 1910. British Antarctic Expedition 1910-1913. (Photo by Herbert Ponting/Royal Geographical Society via Getty Images)",
+											"ext": "jpg",
+											"ttl": "Entering the Pack; Fo'castle of the Terra Nova"
+										},
+										"abstract": "Disastrous journeys tend to be transformative and more memorable than perfect ones—and actually make us happier.",
+										"title": "Why bad trips can make for great stories",
+										"tags": [
+											{
+												"name": "Travel",
+												"id": "432c4f83-2d55-3974-b95f-a221c87c0fd1",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/travel"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-travel-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "Techy apps and paper cards could prove your COVID-19 status, but they might invade your privacy.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/travel/article/daunting-challenges-surround-vaccine-passports",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.4872912127814089
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/8890d3de-769a-4007-a8d5-8e06eb51eb35/h_15504208",
+											"src": "https://i.natgeofe.com/n/8890d3de-769a-4007-a8d5-8e06eb51eb35/h_15504208.JPG",
+											"altText": "People lining up before entering a concert venue, many holding their phones",
+											"crdt": "Photograph by Dan Balilty, The New York Times/Redux",
+											"dsc": "FILE -- Music fans show their \"Green Pass\" before entering a concert in Tel Aviv on March 26, 2021. Vaccine passports are increasingly viewed as the key to unlocking the world after a year of pandemic-induced lockdowns, but they are also stirring complicated political and ethical debates about discrimination, inequality, privacy and fraud. (Dan Balilty/The New York Times)",
+											"ext": "JPG",
+											"ttl": "Music fans show their \"Green Pass\" before entering a concert in Tel Aviv on March 26, 2021. (Dan Balilty/The New York Times)"
+										},
+										"abstract": "Techy apps and paper cards could prove your COVID-19 status, but they might invade your privacy.",
+										"title": "Challenges surround vaccine passports",
+										"tags": [
+											{
+												"name": "Travel",
+												"id": "432c4f83-2d55-3974-b95f-a221c87c0fd1",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/travel"
+											},
+											{
+												"name": "Coronavirus Coverage",
+												"id": "a92c48ec-5e34-3b63-a1e1-2726bfc4c34e",
+												"type": "series",
+												"uri": "https://www.nationalgeographic.com/science/topic/coronavirus-coverage"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-travel-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "As coronavirus forced millions of people around the world into lockdown, another sizeable population had also been hard hit—stray cats and dogs.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/travel/article/street-cats-left-behind-as-covid-forced-tourist-hot-spots-to-close",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.5025678650036685
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/171e6e54-37db-46a1-af4f-3276a6f4d662/GettyImages-1209527099",
+											"src": "https://i.natgeofe.com/n/171e6e54-37db-46a1-af4f-3276a6f4d662/GettyImages-1209527099.JPG",
+											"altText": "Woman feeding cats outside",
+											"crdt": "Photograph by Angelos Tzortzini, AFP/Getty Images",
+											"dsc": "Greek volunteer of Nine Lives network Eleni Kefalopoulou feeds cats in Athens on April 8, 2020. - As coronavirus forces millions of people around the world into lockdown, another sizeable population has also been hard hit -- stray animals. While pet owners in many countries are still allowed to walk their dogs, thousands of other animals -- the exact numbers are unknown -- are starving and turning feral. (Photo by ANGELOS TZORTZINIS / AFP) (Photo by ANGELOS TZORTZINIS/AFP via Getty Images)",
+											"ext": "JPG",
+											"ttl": "GREECE-HEALTH-VIRUS-ANIMALS"
+										},
+										"abstract": "As coronavirus forced millions of people around the world into lockdown, another sizeable population had also been hard hit—stray cats and dogs.",
+										"title": "What happens to street animals when tourists suddenly disappear?",
+										"tags": [
+											{
+												"name": "Travel",
+												"id": "432c4f83-2d55-3974-b95f-a221c87c0fd1",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/travel"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-travel-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "For avid hikers, spring is an underappreciated time to see nature come to life. But the season also brings its own hazards.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/travel/article/what-is-mud-hiking-and-how-can-you-do-it-safely",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.4984378755106947
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/c6994905-0481-454b-b157-8a20609ed7ce/GettyImages-673233238",
+											"src": "https://i.natgeofe.com/n/c6994905-0481-454b-b157-8a20609ed7ce/GettyImages-673233238.jpg",
+											"altText": "Child making a big splash as mom comes to get him in the mud in a meadow during Spring",
+											"crdt": "Photograph by Vernon Wiley, Getty Images",
+											"dsc": "Child making a big splash as mom comes to get him in the mud in a meadow during Spring",
+											"ext": "jpg",
+											"ttl": "Child making a big splash as mom comes to get him in the mud in a meadow during Spring"
+										},
+										"abstract": "For avid hikers, spring is an underappreciated time to see nature come to life. But the season also brings its own hazards.",
+										"title": "Why you shouldn’t fear a little mud on your next hike",
+										"tags": [
+											{
+												"name": "Travel",
+												"id": "432c4f83-2d55-3974-b95f-a221c87c0fd1",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/travel"
+											}
+										]
+									},
+									{
+										"id": "natgeo-globalpromo-frame1-travel-tile",
+										"cmsType": "RegularStandardPrismTile",
+										"description": "Once beacons in rough waters, these historic structures now face an uncertain future.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/travel/article/how-staying-in-a-lighthouse-can-help-preserve-a-coastal-icon",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.4985590778097984
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/930b8247-7f9b-424a-9ff4-2d342fdeb14a/GettyImages-687534886",
+											"src": "https://i.natgeofe.com/n/930b8247-7f9b-424a-9ff4-2d342fdeb14a/GettyImages-687534886.jpg",
+											"crdt": "Photograph by Edwin Remsburg, VW Pics/Getty Images",
+											"dsc": "Dusk falls on the Heceta Head lighthouse on the Oregon Coast.",
+											"ext": "jpg",
+											"ttl": "Lighthouses 4"
+										},
+										"abstract": "Once beacons in rough waters, these historic structures now face an uncertain future.",
+										"title": "How to save a lighthouse? Sleep in one.",
+										"tags": [
+											{
+												"name": "Travel",
+												"id": "432c4f83-2d55-3974-b95f-a221c87c0fd1",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/travel"
+											}
+										]
+									}
+								],
+								"heading": "Travel",
+								"pageInfo": {
+									"endCursor": "NTpSRmxPUVY4d0kwbEVPa1JTVG54a2NtNDZjM0pqT201aGRHZGxienAxYm1semIyNDZPbkJ5YjJRNk5HTXdPVE5qWXpNdE1HVXhaQzAwTjJJMUxXSXhZamN0TURNNU9UVm1OV0ZtTURWa0kxTlBVbFE2YjNKcFoybHVZV3hRZFdKc2FYTm9aV1JFWVhSbGZERTJNVGM0TVRVd09EazJORGM9",
+									"hasNextPage": true
+								},
+								"templateContext": "eyJjb250ZW50VHlwZSI6IlVuaXNvblBhZ2VDb250ZW50IiwidmFyaWFibGVzIjp7ImluY2x1ZGVNZWRpYUNvbnRlbnRzIjp0cnVlLCJjb250ZW50VHlwZSI6InBhZ2UiLCJsb2NhdG9yIjoiL3Bob3RvLW9mLXRoZS1kYXkiLCJwb3J0Zm9saW8iOiJuYXRnZW8iLCJxdWVyeVR5cGUiOiJMT0NBVE9SIn0sIm1vZHVsZUlkIjpudWxsfQ"
+							},
+							{
+								"id": "natgeo-globalpromo-frame1-magazine",
+								"cmsType": "TileStackModule",
+								"trackImpression": false,
+								"cardsDisplayed": 5,
+								"cta": {
+									"text": "See More",
+									"url": "/magazine",
+									"target": "_self"
+								},
+								"heading": "Subscriber Exclusive Content",
+								"cards": [
+									{
+										"id": "natgeo-default-tilestack-m1-t1",
+										"cmsType": "FeaturedContentTile",
+										"description": "COVID-19 is a reminder of their destructive power, but they’re crucial to humans’ development and survival.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/magazine/article/viruses-can-cause-great-harm-but-we-could-not-live-without-them-feature",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 0.9201940035273368
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/d26c9175-e810-4c0e-82fd-797fde842edc/viruses-embryo-og",
+											"src": "https://i.natgeofe.com/n/d26c9175-e810-4c0e-82fd-797fde842edc/viruses-embryo-og.jpg",
+											"ext": "jpg"
+										},
+										"abstract": "COVID-19 is a reminder of their destructive power, but they’re crucial to humans’ development and survival.",
+										"theme": "dark",
+										"title": "How viruses shape our world",
+										"tags": [
+											{
+												"name": "Magazine",
+												"id": "9af83c1e-1fdc-3710-b252-c42eedb1b7c1",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/magazine"
+											}
+										]
+									},
+									{
+										"id": "natgeo-default-tilestack-m1-t1",
+										"cmsType": "FeaturedContentTile",
+										"description": "Concerns about the dogs’ welfare and declining betting revenue have led tracks across the country to close in recent decades.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/animals/article/greyhound-racing-decline-united-states",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.2503052503052504
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/a200a601-b86d-489b-95eb-8879487089bb/mm9423_200724_01291",
+											"src": "https://i.natgeofe.com/n/a200a601-b86d-489b-95eb-8879487089bb/mm9423_200724_01291.jpg",
+											"altText": "the profile of a greyhound",
+											"crdt": "Photograph by Erika Larsen",
+											"dsc": "tktk",
+											"ext": "jpg",
+											"ttl": "greyhound-racing"
+										},
+										"abstract": "Concerns about the dogs’ welfare and declining betting revenue have led tracks across the country to close in recent decades.",
+										"theme": "dark",
+										"title": "The era of greyhound racing in the U.S. is coming to an end",
+										"tags": [
+											{
+												"name": "Animals",
+												"id": "fa010584-7bbf-3e92-90f9-586bb27fce94",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/animals"
+											}
+										]
+									},
+									{
+										"id": "natgeo-default-tilestack-m1-t1",
+										"cmsType": "FeaturedContentTile",
+										"description": "Scheming invaders. Benevolent vegetarians. Climate refugees. As scientific exploration has advanced, so have creative interpretations of the red planet and its potential residents.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/magazine/article/see-how-people-have-imagined-life-on-mars-through-history-feature",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 0.7509765625
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/0fa355b6-2da0-4f21-ab14-0c5f24305e96/mars-rover-cameras-fantastic-adventures",
+											"src": "https://i.natgeofe.com/n/0fa355b6-2da0-4f21-ab14-0c5f24305e96/mars-rover-cameras-fantastic-adventures.jpg",
+											"altText": "tall preacher shaking hands with human.",
+											"crdt": "Photograph by CHRONICLE/ALAMY STOCK PHOTO",
+											"dsc": "1939 “The Man From Mars” Drawn by Frank R. Paul for Fantastic Adventures, this Martian is telepathic and can retract his eyes and nose to protect them from freezing.",
+											"ext": "jpg",
+											"ttl": "mars-rover-cameras-fantastic-adventures"
+										},
+										"abstract": "Scheming invaders. Benevolent vegetarians. Climate refugees. As scientific exploration has advanced, so have creative interpretations of the red planet and its potential residents.",
+										"theme": "dark",
+										"title": "See how people have imagined life on Mars through history",
+										"tags": [
+											{
+												"name": "Magazine",
+												"id": "9af83c1e-1fdc-3710-b252-c42eedb1b7c1",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/magazine"
+											}
+										]
+									},
+									{
+										"id": "natgeo-default-tilestack-m1-t1",
+										"cmsType": "FeaturedContentTile",
+										"description": "Slated to land on Mars this month, the Perseverance rover will search for signs of past life and test new technologies for supporting future human missions.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/magazine/graphics/see-how-nasas-new-mars-rover-will-explore-the-red-planet-feature",
+												"text": "natgeo.ctaText.explore",
+												"icon": "interactive"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/881cfee1-85e1-49eb-8514-9944f56ef8d3/mars-rover-og",
+											"src": "https://i.natgeofe.com/n/881cfee1-85e1-49eb-8514-9944f56ef8d3/mars-rover-og.jpg",
+											"ext": "jpg"
+										},
+										"abstract": "Slated to land on Mars this month, the Perseverance rover will search for signs of past life and test new technologies for supporting future human missions.",
+										"theme": "dark",
+										"title": "See how NASA’s new Mars rover will explore the red planet",
+										"tags": [
+											{
+												"name": "Magazine",
+												"type": "sources"
+											}
+										]
+									},
+									{
+										"id": "natgeo-default-tilestack-m1-t1",
+										"cmsType": "FeaturedContentTile",
+										"description": "The dusty red planet has fascinated us for centuries. Even as we learn more, its mysteries keep us in suspense.",
+										"ctas": [
+											{
+												"url": "https://www.nationalgeographic.com/magazine/article/why-are-people-so-dang-obsessed-with-mars-feature",
+												"text": "natgeo.ctaText.read",
+												"icon": "article"
+											}
+										],
+										"img": {
+											"crps": [
+												{
+													"nm": "raw",
+													"aspRto": 0.92919921875
+												},
+												{
+													"nm": "16x9",
+													"aspRto": 1.7777777777777777
+												},
+												{
+													"nm": "3x2",
+													"aspRto": 1.5
+												},
+												{
+													"nm": "square",
+													"aspRto": 1
+												},
+												{
+													"nm": "2x3",
+													"aspRto": 0.6666666666666666
+												},
+												{
+													"nm": "3x4",
+													"aspRto": 0.75
+												},
+												{
+													"nm": "4x3",
+													"aspRto": 1.3333333333333333
+												},
+												{
+													"nm": "2x1",
+													"aspRto": 2
+												}
+											],
+											"rt": "https://i.natgeofe.com/n/0aedd0ea-f5f8-45c1-a135-b092ef1e8d19/mars-rover-cameras-early-photo-mars",
+											"src": "https://i.natgeofe.com/n/0aedd0ea-f5f8-45c1-a135-b092ef1e8d19/mars-rover-cameras-early-photo-mars.jpg",
+											"altText": "blurry photograph of Mars surface with dark spots.",
+											"crdt": "Photograph by E.C. Slipher, LOWELL OBSERVATORY ARCHIVES",
+											"dsc": "Early, blurry views of Mars inspired stories of canal-building aliens.",
+											"ext": "jpg",
+											"ttl": "mars-rover-cameras-early-photo-mars"
+										},
+										"abstract": "The dusty red planet has fascinated us for centuries. Even as we learn more, its mysteries keep us in suspense.",
+										"theme": "dark",
+										"title": "Why are people so dang obsessed with Mars?",
+										"tags": [
+											{
+												"name": "Magazine",
+												"id": "9af83c1e-1fdc-3710-b252-c42eedb1b7c1",
+												"type": "sources",
+												"uri": "https://www.nationalgeographic.com/magazine"
+											}
+										]
+									}
+								]
+							}
+						],
+						"theme": "dark",
+						"cmsType": "EnhancedFrame"
+					}
+				],
+				"meta": {
+					"cnnicl": "https://www.nationalgeographic.com/photo-of-the-day",
+					"dsc": "A daily peek into National Geographic's vast photography archive.",
+					"id": "drn:src:natgeo:unison::prod:fd5444cc-4777-4438-b9d4-5085c0564b44",
+					"ttl": "Photo of the Day",
+					"sclDsc": "A daily peek into National Geographic's vast photography archive.",
+					"sclTtl": "Photo of the Day",
+					"adKvps": {
+						"objid": "drn:src:natgeo:unison::prod:fd5444cc-4777-4438-b9d4-5085c0564b44"
+					},
+					"pgTxnmy": {
+						"audiences": [
+							"General"
+						],
+						"genres": [
+							"Photo Gallery"
+						],
+						"series": [
+							"Photo of the Day"
+						],
+						"sources": [
+							"Photography"
+						],
+						"subjects": [
+							"Photography",
+							"Black-and-White Photography",
+							"Digital Photography",
+							"Landscape Photography",
+							"Photojournalism",
+							"Portrait Photography",
+							"Street Photography",
+							"Underwater Photography",
+							"Wildlife Photography"
+						]
+					},
+					"hreflngs": [
+						{
+							"lcl": "en-us",
+							"url": "https://www.nationalgeographic.com/photo-of-the-day"
+						}
+					]
+				},
+				"flags": {
+					"hidePublishDate": true
+				},
+				"activeItem": {
+					"img": {
+						"crps": [
+							{
+								"nm": "raw",
+								"aspRto": 1.4442877291960508
+							},
+							{
+								"nm": "16x9",
+								"aspRto": 1.7777777777777777
+							},
+							{
+								"nm": "3x2",
+								"aspRto": 1.5
+							},
+							{
+								"nm": "square",
+								"aspRto": 1
+							},
+							{
+								"nm": "2x3",
+								"aspRto": 0.6666666666666666
+							},
+							{
+								"nm": "3x4",
+								"aspRto": 0.75
+							},
+							{
+								"nm": "4x3",
+								"aspRto": 1.3333333333333333
+							},
+							{
+								"nm": "2x1",
+								"aspRto": 2
+							}
+						],
+						"rt": "https://i.natgeofe.com/n/0fb5fa13-d1bc-45e3-80b0-6efa9de07199/POD-15-04-2021_NationalGeographic_436858",
+						"src": "https://i.natgeofe.com/n/0fb5fa13-d1bc-45e3-80b0-6efa9de07199/POD-15-04-2021_NationalGeographic_436858.jpg",
+						"altText": "Picture of a woman in Saudi Arabia wearing a veil while watching over girls playing on a beach.",
+						"crdt": "Photograph by Jodi Cobb, Nat Geo Image Collection",
+						"dsc": "A story in the October 1987 issue examined the lives of women in Saudi Arabia. Here, a woman wears a traditional niqab, but the young girls won't start wearing the veil until they reach puberty.",
+						"ext": "jpg",
+						"ttl": "Saudi Women"
+					},
+					"slug": "women-niqab-saudi-arabia",
+					"locator": "/photo-of-the-day/media-spotlight/women-niqab-saudi-arabia",
+					"cursor": "RFlOQV8wI0lEOkRSTnxkcm46c3JjOm5hdGdlbzp1bmlzb246OnByb2Q6MTdmZmU4NDEtYmM0Yy00MzgzLTg2MjktMWI4NDE5NmEzOGMxI1NPUlQ6b3JpZ2luYWxQdWJsaXNoZWREYXRlfDE2MTg0NDk4NzQ2MTU=",
+					"caption": {
+						"credit": "Photograph by Jodi Cobb, Nat Geo Image Collection",
+						"preHeading": "April 15, 2021",
+						"text": "A story in the October 1987 issue examined the lives of women in Saudi Arabia. Here, a woman wears a traditional niqab, but the young girls won't start wearing the veil until they reach puberty.",
+						"title": "Saudi Women"
+					},
+					"meta": {
+						"title": "Saudi Women | Nat Geo Photo of the Day",
+						"description": "A woman wearing a niqab watches over girls playing on a beach in Saudi Arabia in this image from our photography archives."
+					}
+				},
+				"config": {
+					"logoIcon": "ng-border",
+					"numLines": 3,
+					"type": "default",
+					"IMAGE_CONFIGS": {
+						"inline": {
+							"default": [
+								{
+									"cropName": "raw",
+									"width": 374,
+									"screenWidth": 374
+								},
+								{
+									"cropName": "raw",
+									"width": 413,
+									"screenWidth": 413
+								},
+								{
+									"cropName": "raw",
+									"width": 767,
+									"screenWidth": 767
+								},
+								{
+									"cropName": "raw",
+									"width": 1024,
+									"screenWidth": 1024
+								},
+								{
+									"cropName": "raw",
+									"width": 670
+								}
+							]
+						},
+						"tileStack": {
+							"aspectRatio": 0.75,
+							"cropName": "3x4",
+							"width": 400
+						},
+						"featContent": {
+							"aspectRatio": 0.6666666666666666,
+							"cropName": "2x3",
+							"width": 400
+						}
+					}
+				}
+			}
+		},
+		"transition": {
+			"disableAdInit": true,
+			"hide": {
+				"rules": [
+					{
+						"priority": 4,
+						"retValue": false,
+						"conditions": [
+							{
+								"type": "match",
+								"path": "pageType",
+								"val": "mediaspotlight"
+							}
+						]
+					}
+				]
+			},
+			"reload": {
+				"rules": [
+					{
+						"priority": 4,
+						"retValue": false,
+						"conditions": [
+							{
+								"type": "match",
+								"path": "pageType",
+								"val": "mediaspotlight"
+							}
+						]
+					}
+				]
+			}
+		},
+		"ads": {
+			"kvps": [
+				{
+					"name": "pgtyp",
+					"value": "mediaspotlight"
+				},
+				{
+					"name": "ed",
+					"value": "us"
+				},
+				{
+					"name": "lang",
+					"value": "en"
+				},
+				{
+					"name": "objid",
+					"value": "drn:src:natgeo:unison::prod:fd5444cc-4777-4438-b9d4-5085c0564b44"
+				}
+			]
+		},
+		"analytics": {
+			"page_type": "mediaspotlight",
+			"page_url": "www.nationalgeographic.com/photo-of-the-day",
+			"page_taxonomy": {
+				"srcs": "Photography",
+				"frstSbj": "Photography",
+				"sries": "Photo of the Day",
+				"othrSbjs": "Black-and-White Photography, Digital Photography, Landscape Photography, Photojournalism, Portrait Photography, Street Photography, Underwater Photography, Wildlife Photography",
+				"gnres": "Photo Gallery",
+				"auds": "General"
+			}
+		}
+	},
+	"request": {
+		"headers": {},
+		"httpVersion": "1.1",
+		"method": "GET",
+		"url": "/photo-of-the-day",
+		"vary": {
+			"cached": true,
+			"device": "pc",
+			"host": "www.nationalgeographic.com",
+			"path": "/photo-of-the-day",
+			"forwarded-proto": "https",
+			"country": "cn",
+			"edition": "natgeo-en-us",
+			"edition-view": "natgeo-en-us",
+			"loggedin": "false"
+		}
+	},
+	"viewport": {
+		"width": 1260,
+		"height": 0,
+		"scrollX": 0,
+		"scrollY": 0
+	}
+}
