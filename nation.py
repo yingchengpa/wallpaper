@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""环球科学 每日故事壁纸"""
+"""国家地理 每日故事壁纸"""
 
 import requests
 import log
@@ -96,6 +96,15 @@ def downimg():
 
     ''' 写入数据库'''
     _writetodb(dic)
+
+
+def getimg(day):
+    """
+    获取某天的壁纸
+    :return:
+    """
+    o = nationdb.CSqlite()
+    return o.getimg(day)
 
 
 if __name__ == '__main__':

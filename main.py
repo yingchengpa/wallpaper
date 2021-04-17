@@ -12,8 +12,13 @@ app = Flask(__name__)
 
 
 @app.route('/bingwall/<string:day>', methods=['GET'])
-def getwall(day):
+def getbingwall(day):
     return response.response_success_data(bingwall.getimg(day))
+
+
+@app.route('/nation/<string:day>', methods=['GET'])
+def getnation(day):
+    return response.response_success_data(nation.getimg(day))
 
 
 def _time_task():
@@ -23,6 +28,7 @@ def _time_task():
         if datetime.datetime.now().hour == 2:
             bingwall.downimg()
             nation.downimg()
+            time.sleep(4000)
         else:
             time.sleep(3500)
 
