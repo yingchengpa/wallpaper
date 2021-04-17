@@ -23,8 +23,8 @@ class CSqlite:
 
         return self.sqlbase.exec_fetchall(sql)
 
-    def getall(self):
-        sql = "select * from {} LIMIT 5000".format(TBL_NAME)
+    def getall(self, limit):
+        sql = "select * from {} LIMIT {}".format(TBL_NAME, limit)
 
         return self.sqlbase.exec_fetchall(sql)
 

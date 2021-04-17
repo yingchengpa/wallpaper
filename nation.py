@@ -10,7 +10,11 @@ import nationdb
 
 
 def _html2dict(html):
-    """"""
+    """
+    通过返回的html内容中，截取 "app" 信息作为json内容
+    :param html:
+    :return:
+    """
     dic = {}
     index = html.find("""{\"app\"""")
     if index == -1:
@@ -25,7 +29,10 @@ def _html2dict(html):
 
 
 def _getdaywall() -> dict:
-    """"""
+    """
+    通过解析返回的html内容提取json信息
+    :return:
+    """
     dic = {}
     url = "https://www.nationalgeographic.com/photo-of-the-day/"
     r = []
@@ -103,8 +110,15 @@ def getimg(day):
     获取某天的壁纸
     :return:
     """
-    o = nationdb.CSqlite()
-    return o.getimg(day)
+    return nationdb.CSqlite().getimg(day)
+
+
+def getallimg():
+    """
+    获取最近的n张图片
+    :return:
+    """
+    return nationdb.CSqlite().getall(50)
 
 
 if __name__ == '__main__':

@@ -123,8 +123,15 @@ def getimg(day):
     获取某天的壁纸
     :return:
     """
-    o = bingdb.CSqlite()
-    return o.getimg(day)
+    return bingdb.CSqlite().getimg(day)
+
+
+def getallimg():
+    """
+    获取最近的n张图片
+    :return:
+    """
+    return bingdb.CSqlite().getall(50)
 
 
 if __name__ == '__main__':

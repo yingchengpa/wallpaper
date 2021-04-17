@@ -11,12 +11,22 @@ import nation
 app = Flask(__name__)
 
 
-@app.route('/bingwall/<string:day>', methods=['GET'])
+@app.route('/wallpaper/bingwall', methods=['GET'])
+def getbingwalls():
+    return response.response_success_data(bingwall.getallimg())
+
+
+@app.route('/wallpaper/bingwall/<string:day>', methods=['GET'])
 def getbingwall(day):
     return response.response_success_data(bingwall.getimg(day))
 
 
-@app.route('/nation/<string:day>', methods=['GET'])
+@app.route('/wallpaper/nation', methods=['GET'])
+def getnations():
+    return response.response_success_data(nation.getallimg())
+
+
+@app.route('/wallpaper/nation/<string:day>', methods=['GET'])
 def getnation(day):
     return response.response_success_data(nation.getimg(day))
 
