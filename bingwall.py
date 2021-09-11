@@ -3,9 +3,10 @@
 """bing 壁纸"""
 
 import requests
-import log
+import utils.log as log
 import json
-import bingdb
+import utils.bingdb as bingdb
+import initres
 
 
 def _getyesterdaywall() -> dict:
@@ -32,9 +33,25 @@ def _getyesterdaywall() -> dict:
 }
     """
 
-    '''  n=1 表示获取昨天的图片，n=2 表示获取昨天、前天数据，n=3 表示获取昨天、前天、大前天数据
+    '''  
+    n
+
+    必填，表示返回照片数量。
+    
+    idx
+    
+    非必填，用于指定获取哪天的壁纸，0：表示当天，1：表示昨天，2：表示前天，这样依此类推。
+    
+    format
+    
+    非必填，用于指定输出格式，默认是 XML 的，传入 js 表示返回 JSON 格式。
+    
+    mkt
+    
+    非必填，用于指定推送地区，如：en-US，zh-CN，ja-JP，en-AU，en-UK，de-DE，en-NZ，en-CA
+
     最迟只能获取昨天数据，最多只能获取8天数据 '''
-    url = "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1"
+    url = "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=zh-cn"
     r = []
     try:
         r = requests.get(url, timeout=5)
@@ -92,26 +109,27 @@ def downimg():
 
     ''' 获取一天的json 描述'''
     d = _getyesterdaywall()
-    day = d['startdate']
+    day = d['enddate']
     baseurl = d['urlbase']
 
     ''' 本地文件路径 '''
-    hdname = '/bingwall/{}_hd.jpg'.format(day)
-    uhdname = '/bingwall/{}_uhd.jpg'.format(day)
+    hdname = initres.bingpath +"/{}_hd.jpg".format(day)
+    uhdname = initres.bingpath + "/{}_uhd.jpg".format(day)
 
     dic = {
         'day': day,
         'urlbase': baseurl,
-        'copyright': d['copyright'],
-        'copyrightlink': d['copyrightlink'],
+        'copyright': d['copyright'].replace('\'', '\'\''),
+        'copyrightlink': d['copyrightlink'].replace('\'', '\'\''),
         'hd': hdname,
         'uhd': uhdname,
         'download': 0,
         'share': 0
     }
+    log.logger.info(dic)
 
     '''下载图片'''
-    _downhdimg(baseurl, hdname)
+    # _downhdimg(baseurl, hdname)
     _downuhdimg(baseurl, uhdname)
 
     ''' 写入数据库'''

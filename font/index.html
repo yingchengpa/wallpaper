@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>wallpaper</title>
+    </head>
+
+    <script src="https://cn.vuejs.org/js/vue.min.js"></script>
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+
+    <body>
+        <div id="root" class="root">
+            <div class="wallmain" style="overflow:auto" v-infinite-scroll="load" infinite-scroll-disabled="cptLoadDisabled">
+                <div class="wallmain-wrap">
+                    <div v-for="item in picShow" class="wallmain-item fade">
+                        <img :src="'http://' + v.serverIpAddr + '/bingwall/img/' + item.day" alt="">
+                        <div class="wallmain-item-title">
+                            <span>
+                                {{item.copyright}}
+                            </span>
+                            <span>
+                                <i class="el-icon-date"></i>{{item.day}}
+                            </span>
+                            <span>
+                                <i class="el-icon-view"></i>1234
+                            </span>
+                        </div>
+                        <div class="wallmain-item-more">
+                            <div class="wallmain-item-bottom">
+                                <i class="el-icon-share"></i>分享
+                            </div>
+                            <div class="wallmain-item-bottom">
+                                <i class="el-icon-star-off"></i>1234
+                            </div>
+                            <div class="wallmain-item-bottom">
+                                <i class="el-icon-download"></i>5678
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wallmain-info" v-if="cptLoadButton">
+                    <el-link type="info" @click="load">点击加载更多</el-link>
+                </div>
+                <div class="wallmain-info" v-if="loading">加载中...</div>
+                <div class="wallmain-info" v-if="cptLoadNoMore">没有更多了</div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        var v = new Vue({
+            el: '#root',
+            data: {
+                serverIpAddr: "",
+                picInfos: [],
+                picShow: [],
+                picAddCount: 1,
+                loading: false
+            },
+            created() {
+            },
+            mounted() {
+                let that = this;
+                console.log("-------------")
+                if ("" != window.location.host) that.serverIpAddr = window.location.host;
+                let httpRequest = funGET("http://" + that.serverIpAddr + "/bingwall");
+                httpRequest.onreadystatechange = function () {
+                    if (httpRequest.readyState == 4 && httpRequest.status == 200) {
+                        that.picInfos = JSON.parse(httpRequest.responseText).data;
+                        for(let i = 0; i < that.picAddCount; i++){
+                            that.picShow.push(that.picInfos[i]);
+                        }
+                    }
+                }
+            },
+            computed: {
+                cptLoadButton(){
+                    return !this.loading && !this.cptLoadNoMore
+                },
+                cptLoadNoMore() {
+                    // return this.picShowCount >= this.picInfos.length;
+                    console.log("nomore", this.picShow.length, this.picInfos.length)
+                    return this.picInfos.length > 0 && this.picShow.length >= this.picInfos.length
+                },
+                cptLoadDisabled() {
+                    return this.loading || this.cptLoadNoMore
+                }
+            },
+            methods: {
+                load() {
+                    v.loading = true;
+                    setTimeout(() => {
+                        for(let i = 0; i < v.picAddCount; i++){
+                            if(v.picShow.length >= v.picInfos.length) return;
+                            v.picInfos[i].src = "http://" + v.serverIpAddr + "/day/" + v.picInfos[i].day
+                            v.picShow.push(v.picInfos[i])
+                        }
+                        v.loading = false
+                        console.log("load", v.picShow.length)
+                    }, 500)
+                },
+                isInViewPortOfOne (el) {
+                    const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight ;//窗口可视高度
+                    const offsetTop = el.offsetTop;//元素顶部高度
+                    const offsetHeight = el.offsetHeight;//元素高度
+                    const scrollTop = document.documentElement.scrollTop;//滚动距离
+                    //判断是否在工作窗口内
+                    const top = (offsetTop+offsetHeight )- scrollTop
+                    if(top > 0 && top < viewPortHeight){
+                        return true
+                    } else {
+                        return false;
+                    }
+                }
+            }
+        });
+        
+
+        function funGET(getUrl) {
+            let httpRequest = new XMLHttpRequest();
+            httpRequest.open('GET', getUrl, true);
+            httpRequest.setRequestHeader("If-Modified-Since", "0");
+            httpRequest.send();
+            return httpRequest;
+        }
+        function funPOST(postUrl, postVaule) {
+            let httpRequest = new XMLHttpRequest();
+            httpRequest.open('POST', postUrl, true);
+            httpRequest.setRequestHeader("Content-type", "application/json");
+            httpRequest.send(JSON.stringify(postVaule));
+            return httpRequest;
+        }
+    </script>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .root {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .wallmain{
+            flex: 1;
+            width: 100%;
+        }
+        .wallmain-item{
+            width: 100%;
+            overflow: auto;
+            display: flex;
+            position: relative;
+        }
+        .wallmain-item img{
+            min-height: 200px;
+            max-width: 100%;
+            max-height: 100%;
+            display: inline-block;
+        }
+        .wallmain-item-title{
+            padding: 10px;
+            color: #FFF;
+            font-size: 30px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+        }
+        .wallmain-item-more{
+            right: 0;
+            bottom: 0;
+            color: #FFF;
+            font-size: 30px;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+        }
+        .wallmain-item-bottom{
+            background: #FFFFFF88;
+            margin: 10px;
+            padding: 10px;
+            cursor:pointer;
+            border-radius: 10px;
+        }
+        .wallmain-info{
+            margin: 20px auto;
+            color: #666;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .fade{
+            animation: fade-in;
+            animation-duration: 2.5s;
+            -webkit-animation: fade-in 2.5s;
+        }
+        
+        @keyframes fade-in{
+            0% {
+                margin-top: -30px;
+                color: #409eff;
+                background: #409eff;
+                opacity: .5;
+            }
+        }
+        @-webkit-keyframes fade-in{
+            0% {
+                margin-top: -30px;
+                color: #409eff;
+                background: #409eff;
+                opacity: .5;
+            }
+        }
+    </style>
+
+    <style scoped>
+
+    </style>
+
+</html>

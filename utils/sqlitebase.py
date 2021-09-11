@@ -5,8 +5,8 @@ sqlite base
 """
 
 import sqlite3
-import log
-import sqlbase
+import utils.log as log
+import utils.sqlbase as sqlbase
 import os
 
 

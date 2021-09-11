@@ -3,11 +3,11 @@
 """国家地理 每日故事壁纸"""
 
 import requests
-import log
+import utils.log as log
 import json
 import time
-import nationdb
-
+from utils import nationdb
+import  initres
 
 def _html2dict(html):
     """
@@ -86,17 +86,19 @@ def downimg():
     title = d['title']
     discription = d['description']
     ''' 本地文件路径 '''
-    hdname = '/nation/{}.jpg'.format(day)
+    hdname = initres.nationpath + '/{}.jpg'.format(day)
 
     dic = {
         'day': day,
         'srcimg': srcimg,
-        'title': title,
-        'discription': discription,
+        'title': title.replace('\'', '\'\''),
+        'discription': discription.replace('\'', '\'\''),
         'hd': hdname,
         'download': 0,
         'share': 0
     }
+    
+    log.logger.warning(dic)    
 
     '''下载图片'''
     _downimg(srcimg, hdname)

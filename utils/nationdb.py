@@ -1,13 +1,26 @@
 # -*- coding: utf-8 -*-
 
 
-import sqlbase
-import sqlitebase
-import initnationdb as initsql
+import utils.sqlbase as sqlbase
+import utils.sqlitebase as sqlitebase
+import initres
 
 TBL_NAME = 'tbl_nation'
-DB_NAME = '/nation/wall.db'
+DB_NAME = initres.nationpath + '/wall.db'
 
+_DB_SCRIPT = """
+CREATE TABLE tbl_nation (
+                "day" VARCHAR(128) NOT NULL default '',
+                "srcimg"  VARCHAR(256) NOT NULL default '',
+                "title" VARCHAR(256) NOT NULL default '',
+                "discription" VARCHAR(1024) NOT NULL default '',
+                "hd" VARCHAR(256) NOT NULL default '',
+                "download" INTEGER NOT NULL default 0,
+                "share" INTEGER NOT NULL default 0,
+                PRIMARY KEY ("day")
+                );
+
+"""
 
 class CSqlite:
 
@@ -37,4 +50,4 @@ class CSqlite:
         return 0
 
 
-sqlitebase.SqliteBase.initdb(DB_NAME, initsql.DB_SCRIPT)
+sqlitebase.SqliteBase.initdb(DB_NAME, _DB_SCRIPT)
