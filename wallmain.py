@@ -56,7 +56,7 @@ def _time_task():
     """
     while True:                                                        
         log.logger.info('time_task do ')
-        if datetime.datetime.now().hour == 20:
+        if datetime.datetime.now().hour == 2:
             log.logger.info('download pic start !!!!')  
             try:
                 bingwall.downimg()

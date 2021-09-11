@@ -7,6 +7,21 @@ import utils.log as log
 import json
 import utils.bingdb as bingdb
 import initres
+import upload2oss
+import random
+import string
+
+def generate_code():
+    # 获取随机的6位数字
+    # 定义一个种子，从这里面随机拿出一个值，可以是字母
+    seeds = "1234567890"
+    # 定义一个空列表，每次循环，将拿到的值，加入列表
+    random_num = []
+    # choice函数：每次从seeds拿一个值，加入列表
+    for i in range(6):
+        random_num.append(random.choice(seeds))
+    # 将列表里的值，变成四位字符串
+    return "" . join(random_num)
 
 
 def _getyesterdaywall() -> dict:
@@ -112,25 +127,30 @@ def downimg():
     day = d['enddate']
     baseurl = d['urlbase']
 
+    hdname = "{}{}_hd.jpg".format(day,generate_code())
+    uhdname = "{}{}_uhd.jpg".format(day,generate_code())
+
     ''' 本地文件路径 '''
-    hdname = initres.bingpath +"/{}_hd.jpg".format(day)
-    uhdname = initres.bingpath + "/{}_uhd.jpg".format(day)
+    hdpath = initres.bingpath +"/{}".format(hdname)
+    uhdpath = initres.bingpath + "/{}".format(uhdname)
 
     dic = {
         'day': day,
         'urlbase': baseurl,
         'copyright': d['copyright'].replace('\'', '\'\''),
         'copyrightlink': d['copyrightlink'].replace('\'', '\'\''),
-        'hd': hdname,
-        'uhd': uhdname,
+        'hd': hdpath,
+        'uhd': uhdpath,
         'download': 0,
         'share': 0
     }
     log.logger.info(dic)
 
     '''下载图片'''
-    # _downhdimg(baseurl, hdname)
-    _downuhdimg(baseurl, uhdname)
+    # _downhdimg(baseurl, hdpath)
+    _downuhdimg(baseurl, uhdpath)
+
+    dic['ossuhd'] = upload2oss.upload2oss_bing(uhdname, uhdpath)
 
     ''' 写入数据库'''
     _writetodb(dic)

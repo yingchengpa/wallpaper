@@ -15,7 +15,9 @@ CREATE TABLE tbl_wall (
                 "copyright" VARCHAR(256) NOT NULL default '',
                 "copyrightlink" VARCHAR(256) NOT NULL default '',
                 "hd" VARCHAR(256) NOT NULL default '',
+                "osshd" VARCHAR(256) NOT NULL default '',
                 "uhd" VARCHAR(256) NOT NULL default '',
+                "ossuhd" VARCHAR(256) NOT NULL default '',
                 "download" INTEGER NOT NULL default 0,
                 "share" INTEGER NOT NULL default 0,
                 PRIMARY KEY ("day")
